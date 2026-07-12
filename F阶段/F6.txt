@@ -75,4 +75,18 @@ funct7   rs2    rs1   funct3   rd    opcode
 
 它的设计目标是面向更小的嵌入式核，省面积、省功耗。
 
-如果你要，我还能把这些答案整理成一版适合直接交作业的简洁版，或者再补一张 `R/I/S/U/B/J` 指令格式对照表。
+
+
+_start:
+    addi x1, zero, 5        # x1 = 5
+    addi x2, zero, 7        # x2 = 7
+    add  x3, x1, x2         # x3 = 12
+
+    lui  x4, 0x12345        # x4 = 0x12345000
+    addi x5, x4, -1         # x5 = 0x12344fff
+
+    addi x6, zero, -1       # x6 = 0xffffffff
+    add  x7, x6, x1         # x7 = 0x00000004
+
+halt:
+    jalr zero, 28(zero)     # 跳回 halt，死循环
