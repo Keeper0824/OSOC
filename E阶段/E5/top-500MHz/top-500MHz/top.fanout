@@ -1,0 +1,15 @@
+Generate the report at 2026-07-24T22:52:09, GitVersion: aa25008b3778a76ae1975c839d4cc459f7f7b3b7.
++------------------+-----------+--------+-------------+-------------+------+
+| Net / Pin        | MaxFanout | Fanout | FanoutSlack | LibCellPort | Note |
++------------------+-----------+--------+-------------+-------------+------+
+| count_5_         |           |        |             |             |      |
+| count_5__reg_p:Q | NA        | 5      | NA          | DFFQX1H7L/Q |      |
+| led_10_          |           |        |             |             |      |
+| led[10]_reg_p:Q  | NA        | 2      | NA          | DFFQX1H7L/Q |      |
+| led_4_           |           |        |             |             |      |
+| led[4]_reg_p:Q   | NA        | 2      | NA          | DFFQX1H7L/Q |      |
+| count_6_         |           |        |             |             |      |
+| count_6__reg_p:Q | NA        | 5      | NA          | DFFQX1H7L/Q |      |
+| count_2_         |           |        |             |             |      |
+| count_2__reg_p:Q | NA        | 5      | NA          | DFFQX1H7L/Q |      |
++------------------+-----------+--------+-------------+-------------+------+

@@ -1,0 +1,29 @@
+clang -fsyntax-only -Xclang -dump-tokens a.c
+clang -fsyntax-only -Xclang -ast-dump a.c
+clang a.c --analyze -Xanalyzer -analyzer-output=text
+clang -S -emit-llvm -O1 a.c
+clang -S a.c --target=riscv64-linux-gnu
+
+riscv64-linux-gnu-gcc -S a.c 
+clang -c a.c
+
+riscv64-linux-gnu-gcc -c a.c
+llvm-objdump -d a.o
+
+riscv64-linux-gnu-gcc a.c
+
+sun@sun-virtual-machine:~/Desktop/OSOC/E阶段/E4/compile$ time ./timeO02000000001000000000
+
+real    0m1.552s
+user    0m1.549s
+sys     0m0.002s
+sun@sun-virtual-machine:~/Desktop/OSOC/E阶段/E4/compile$ time ./timeO12000000001000000000
+
+real    0m0.827s
+user    0m0.825s
+sys     0m0.001s
+sun@sun-virtual-machine:~/Desktop/OSOC/E阶段/E4/compile$ time ./timeO22000000001000000000
+
+real    0m0.790s
+user    0m0.788s
+sys     0m0.001s

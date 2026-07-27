@@ -1,0 +1,15 @@
+Generate the report at 2026-07-26T20:39:42, GitVersion: aa25008b3778a76ae1975c839d4cc459f7f7b3b7.
++------------------------------------------------------------------------------------+---------------+---------------+---------------+--------------------+------+
+| Net / Pin                                                                          | MaxSlewTime   | SlewTime      | SlewSlack     | LibCellPort        | Note |
++------------------------------------------------------------------------------------+---------------+---------------+---------------+--------------------+------+
+| count_14__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B                                 |               |               |               |                    |      |
+| count_13__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B_NOR4X0P5H7R_Y_D_NOR4X1P4H7R_C:Y | 0.796r/0.796f | 0.154r/0.036f | 0.642r/0.759f | NOR4X1P4H7R/Y      |      |
+| count_14__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B                                 |               |               |               |                    |      |
+| count_14__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y:B                                 | 0.796r/0.796f | 0.154r/0.036f | 0.642r/0.759f | XNOR2X0P5H7R/B     |      |
+| count_14__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B                                 |               |               |               |                    |      |
+| count_15__reg_p_D_AOI21X0P5H7R_Y_A0_OAI2BB1X0P5H7R_Y:A1N                           | 0.796r/0.796f | 0.154r/0.036f | 0.642r/0.759f | OAI2BB1X0P5H7R/A1N |      |
+| count_14__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B                                 |               |               |               |                    |      |
+| count_15__reg_p_D_AOI21X0P5H7R_Y_A1_NAND3BX0P5H7R_Y:B                              | 0.796r/0.796f | 0.154r/0.036f | 0.642r/0.759f | NAND3BX0P5H7R/B    |      |
+| count_10__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B                                 |               |               |               |                    |      |
+| count_10__reg_p_D_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B_NOR3X0P5H7R_Y:Y                 | 0.796r/0.796f | 0.151r/0.044f | 0.644r/0.751f | NOR3X0P5H7R/Y      |      |
++------------------------------------------------------------------------------------+---------------+---------------+---------------+--------------------+------+

@@ -1,0 +1,483 @@
+I20260726 20:31:27.679335  4232 Sta.cc:383] read verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v start
+I20260726 20:31:27.681170  4232 VerilogParserRustC.cc:41] load verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v
+r str /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v
+I20260726 20:31:27.687227  4232 Sta.cc:391] read verilog end
+I20260726 20:31:27.687342  4232 Sta.cc:309] load lib start
+I20260726 20:31:27.695648  4234 Sta.cc:287] read liberty /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib start 
+I20260726 20:31:27.695797  4234 LibParserRustC.cc:1285] load liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib
+rust read lib file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib
+I20260726 20:31:40.993120  4234 LibParserRustC.cc:1294] load liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib success.
+I20260726 20:31:40.993286  4234 Sta.cc:297] read liberty /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib end 
+I20260726 20:31:40.994408  4232 Sta.cc:328] load lib end
+I20260726 20:31:40.994714  4232 Sta.cc:417] link design top start
+I20260726 20:31:41.001392  4301 LibParserRustC.cc:1304] link liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib start.
+I20260726 20:31:41.007438  4301 LibParserRustC.cc:666] unkown attri name: voltage_map in /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib line no 28
+I20260726 20:32:02.797894  4301 LibParserRustC.cc:1310] link liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib success.
+I20260726 20:32:02.805472  4232 Sta.cc:1106] link design top end
+I20260726 20:32:02.805661  4232 Sta.cc:1108] design top inst num: 188
+I20260726 20:32:02.806456  4232 Sta.cc:1110] design top net num: 190
+I20260726 20:32:02.806476  4232 Sta.cc:1112] design top port num: 18
+I20260726 20:32:02.806517  4232 Sta.cc:181] read sdc /home/sun/Desktop/yosys-sta/scripts/default.sdc start 
+I20260726 20:32:02.809873  4232 CmdCreateClock.cc:124] create clock core_clock for pin/port: clk
+I20260726 20:32:02.809963  4232 Sta.cc:198] read sdc /home/sun/Desktop/yosys-sta/scripts/default.sdc end 
+I20260726 20:32:02.810616  4232 StaBuildGraph.cc:315] build graph start
+I20260726 20:32:02.815943  4232 StaBuildGraph.cc:332] build graph end
+I20260726 20:32:02.816154  4232 Sta.cc:2834] update timing start
+I20260726 20:32:02.816262  4232 StaApplySdc.cc:698] apply sdc start
+I20260726 20:32:02.816326  4232 StaApplySdc.cc:729] apply sdc end
+I20260726 20:32:02.816347  4232 StaClockPropagation.cc:324] ideal clock propagation start
+I20260726 20:32:02.816360  4232 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260726 20:32:02.816375  4232 StaClockPropagation.cc:203] clock propagate end to vertex count_0__reg_p:CK
+I20260726 20:32:02.816444  4232 StaClockPropagation.cc:422] ideal clock propagation end
+I20260726 20:32:02.816496  4232 StaCheck.cc:129] found loop fwd start
+I20260726 20:32:02.816736  4232 StaCheck.cc:148] found loop fwd end
+I20260726 20:32:02.816758  4232 StaCheck.cc:150] found loop bwd start
+I20260726 20:32:02.816881  4232 StaCheck.cc:172] found loop bwd end
+I20260726 20:32:02.817008  4232 StaClockSlewDelayPropagation.cc:112] clock slew delay propagation start
+I20260726 20:32:02.818327  4232 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 1
+I20260726 20:32:02.819208  4232 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 48
+I20260726 20:32:02.819482  4232 StaClockSlewDelayPropagation.cc:163] clock slew delay propagation end
+I20260726 20:32:02.819689  4232 StaClockSlewDelayPropagation.cc:166] clock slew delay propagation memory usage 0MB
+I20260726 20:32:02.819772  4232 StaClockSlewDelayPropagation.cc:169] clock slew delay propagation time elapsed 0.002764s
+I20260726 20:32:02.819970  4232 StaClockPropagation.cc:326] propagated(kNormal) clock propagation start
+I20260726 20:32:02.820024  4232 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260726 20:32:02.820044  4232 StaClockPropagation.cc:424] propagated(kNormal) clock propagation end
+I20260726 20:32:02.820051  4232 StaApplySdc.cc:698] apply sdc start
+I20260726 20:32:02.820056  4232 StaApplySdc.cc:729] apply sdc end
+I20260726 20:32:02.820060  4232 StaClockPropagation.cc:328] propagated(kGenerated) clock propagation start
+I20260726 20:32:02.820065  4232 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260726 20:32:02.820068  4232 StaClockPropagation.cc:426] propagated(kGenerated) clock propagation end
+I20260726 20:32:02.820072  4232 StaApplySdc.cc:698] apply sdc start
+I20260726 20:32:02.820114  4232 StaApplySdc.cc:729] apply sdc end
+I20260726 20:32:02.820133  4232 StaBuildPropTag.cc:325] build propagation tag start
+I20260726 20:32:02.820343  4232 StaBuildPropTag.cc:338] build propagation tag end
+I20260726 20:32:02.820534  4232 StaDataPropagation.cc:676] data fwd propagation start
+I20260726 20:32:02.820751  4232 StaDataPropagationBFS.cc:166] data fwd propagation bfs start
+I20260726 20:32:02.821007  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 49
+I20260726 20:32:02.828603  4309 StaDataPropagationBFS.cc:82] Thread 131596474627648 date fwd propagate found start vertex.count_15__reg_p:CK
+I20260726 20:32:02.828465  4302 StaDataPropagationBFS.cc:82] Thread 131596273202752 date fwd propagate found start vertex.count_0__reg_p:CK
+[0;31mE20260726 20:32:02.828778  4309 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260726 20:32:02.828553  4303 StaDataPropagationBFS.cc:82] Thread 131596281595456 date fwd propagate found start vertex.count_10__reg_p:CK
+[0;31mE20260726 20:32:02.829437  4312 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829582  4312 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829566  4303 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260726 20:32:02.828565  4304 StaDataPropagationBFS.cc:82] Thread 131596289988160 date fwd propagate found start vertex.count_12__reg_p:CK
+I20260726 20:32:02.828585  4306 StaDataPropagationBFS.cc:82] Thread 131596499805760 date fwd propagate found start vertex.count_14__reg_p:CK
+I20260726 20:32:02.828576  4305 StaDataPropagationBFS.cc:82] Thread 131596298380864 date fwd propagate found start vertex.count_13__reg_p:CK
+I20260726 20:32:02.829071  4307 StaDataPropagationBFS.cc:82] Thread 131596491413056 date fwd propagate found start vertex.count_16__reg_p:CK
+[0;31mE20260726 20:32:02.829047  4302 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829465  4309 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829600  4312 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260726 20:32:02.829164  4310 StaDataPropagationBFS.cc:82] Thread 131596466234944 date fwd propagate found start vertex.count_17__reg_p:CK
+I20260726 20:32:02.828465  4333 StaDataPropagationBFS.cc:82] Thread 131595960829504 date fwd propagate found start vertex.rst
+I20260726 20:32:02.828560  4308 StaDataPropagationBFS.cc:82] Thread 131596483020352 date fwd propagate found start vertex.count_11__reg_p:CK
+[0;31mE20260726 20:32:02.829660  4303 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829676  4313 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260726 20:32:02.829435  4311 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260726 20:32:02.834851  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 49
+I20260726 20:32:02.852207  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 170
+I20260726 20:32:02.869026  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 48
+I20260726 20:32:02.876550  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 80
+I20260726 20:32:02.886289  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 54
+I20260726 20:32:02.896365  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 28
+I20260726 20:32:02.904179  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 15
+I20260726 20:32:02.911193  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 26
+I20260726 20:32:02.921087  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 14
+I20260726 20:32:02.928524  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 29
+I20260726 20:32:02.937577  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 39
+I20260726 20:32:02.953547  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 39
+I20260726 20:32:02.961826  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 23
+I20260726 20:32:02.974611  4232 StaDataPropagationBFS.cc:229] data fwd propagation bfs end
+I20260726 20:32:02.974783  4232 StaDataPropagationBFS.cc:232] data fwd propagation bfs memory usage 1744.35MB
+I20260726 20:32:02.974807  4232 StaDataPropagationBFS.cc:234] data fwd propagation bfs time elapsed 0.154057s
+I20260726 20:32:02.974814  4232 StaDataPropagation.cc:695] data fwd propagation end
+I20260726 20:32:02.974820  4232 StaDataPropagation.cc:676] data fwd propagation start
+I20260726 20:32:02.975039  4232 StaDataPropagationBFS.cc:166] data fwd propagation bfs start
+I20260726 20:32:02.975158  4232 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 0
+I20260726 20:32:02.984268  4232 StaDataPropagationBFS.cc:229] data fwd propagation bfs end
+I20260726 20:32:02.984567  4232 StaDataPropagationBFS.cc:232] data fwd propagation bfs memory usage 0MB
+I20260726 20:32:02.984594  4232 StaDataPropagationBFS.cc:234] data fwd propagation bfs time elapsed 0.009558s
+I20260726 20:32:02.984601  4232 StaDataPropagation.cc:695] data fwd propagation end
+I20260726 20:32:02.984608  4232 StaAnalyze.cc:557] analyze timing path start
+I20260726 20:32:02.984613  4232 StaAnalyze.cc:565] analyze timing path end vertex 1 total 64 start
+[0;31mE20260726 20:32:02.984619  4232 StaAnalyze.cc:328] The output port led_0_ is not constrained
+[m[0;31mE20260726 20:32:02.984700  4232 StaAnalyze.cc:328] The output port led_0_ is not constrained
+[mI20260726 20:32:02.984731  4232 StaAnalyze.cc:599] analyze timing path end vertex 1 total 64 end
+[0;31mE20260726 20:32:02.984746  4232 StaAnalyze.cc:328] The output port led_1_ is not constrained
+[m[0;31mE20260726 20:32:02.984753  4232 StaAnalyze.cc:328] The output port led_1_ is not constrained
+[m[0;31mE20260726 20:32:02.984759  4232 StaAnalyze.cc:328] The output port led_2_ is not constrained
+[m[0;31mE20260726 20:32:02.984766  4232 StaAnalyze.cc:328] The output port led_2_ is not constrained
+[m[0;31mE20260726 20:32:02.984771  4232 StaAnalyze.cc:328] The output port led_3_ is not constrained
+[m[0;31mE20260726 20:32:02.984776  4232 StaAnalyze.cc:328] The output port led_3_ is not constrained
+[m[0;31mE20260726 20:32:02.984782  4232 StaAnalyze.cc:328] The output port led_4_ is not constrained
+[m[0;31mE20260726 20:32:02.984788  4232 StaAnalyze.cc:328] The output port led_4_ is not constrained
+[mI20260726 20:32:02.984805  4232 StaAnalyze.cc:565] analyze timing path end vertex 11 total 64 start
+I20260726 20:32:02.984817  4232 StaAnalyze.cc:599] analyze timing path end vertex 11 total 64 end
+I20260726 20:32:02.984881  4232 StaAnalyze.cc:303] add path data num 2 to count_0__reg_p:D
+I20260726 20:32:02.985108  4232 StaAnalyze.cc:565] analyze timing path end vertex 21 total 64 start
+I20260726 20:32:02.985150  4232 StaAnalyze.cc:599] analyze timing path end vertex 21 total 64 end
+I20260726 20:32:02.985262  4232 StaAnalyze.cc:565] analyze timing path end vertex 31 total 64 start
+I20260726 20:32:02.985337  4232 StaAnalyze.cc:599] analyze timing path end vertex 31 total 64 end
+I20260726 20:32:02.985383  4232 StaAnalyze.cc:565] analyze timing path end vertex 41 total 64 start
+I20260726 20:32:02.985391  4232 StaAnalyze.cc:599] analyze timing path end vertex 41 total 64 end
+I20260726 20:32:02.985476  4232 StaAnalyze.cc:565] analyze timing path end vertex 51 total 64 start
+I20260726 20:32:02.985543  4232 StaAnalyze.cc:599] analyze timing path end vertex 51 total 64 end
+I20260726 20:32:02.985663  4232 StaAnalyze.cc:565] analyze timing path end vertex 61 total 64 start
+I20260726 20:32:02.985718  4232 StaAnalyze.cc:599] analyze timing path end vertex 61 total 64 end
+I20260726 20:32:02.985780  4232 StaAnalyze.cc:603] analyze timing path end
+I20260726 20:32:02.985800  4232 StaApplySdc.cc:698] apply sdc start
+I20260726 20:32:02.985811  4232 StaApplySdc.cc:729] apply sdc end
+I20260726 20:32:02.985823  4232 StaDataPropagation.cc:698] data bwd propagation start
+I20260726 20:32:02.990268  4232 StaDataPropagation.cc:249] propagate start vertex count_0__reg_p:CK
+I20260726 20:32:02.990381  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.count_0__reg_p:D
+I20260726 20:32:02.990432  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.count_1__reg_p:D
+I20260726 20:32:02.990468  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[0]_reg_p:D
+I20260726 20:32:02.990506  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[10]_reg_p:D
+I20260726 20:32:02.990525  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[11]_reg_p:D
+I20260726 20:32:02.990622  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[12]_reg_p:D
+I20260726 20:32:02.990661  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[13]_reg_p:D
+I20260726 20:32:02.990689  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[14]_reg_p:D
+I20260726 20:32:02.990707  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[15]_reg_p:D
+I20260726 20:32:02.990721  4232 StaDataPropagation.cc:172] Thread 131596531671168 data bwd propagate found end vertex.led[1]_reg_p:D
+I20260726 20:32:03.001973  4232 StaDataPropagation.cc:703] data bwd propagation end
+I20260726 20:32:03.002075  4232 Sta.cc:2895] update timing end
+I20260726 20:32:03.002182  4232 Sta.cc:2898] update timing memory usage 1744.48MB
+I20260726 20:32:03.002254  4232 Sta.cc:2900] update timing time elapsed 0.186099s
+I20260726 20:32:03.002895  4232 Sta.cc:2998] start write sta report.
+I20260726 20:32:03.002959  4232 Sta.cc:2999] output sta report path: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260726 20:32:03.005750  4232 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260726 20:32:03.006973  4232 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260726 20:32:03.007066  4232 StaReport.cc:211] report the clock group core_clock 1 timing paths.
+I20260726 20:32:03.007148  4232 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260726 20:32:03.007970  4232 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260726 20:32:03.008066  4232 StaReport.cc:211] report the clock group core_clock 1 timing paths.
+I20260726 20:32:03.008078  4232 Sta.cc:1885] 
++-------------------+-------------+------------+------------+---------------+-------+-------+-----------+
+| Endpoint          | Clock Group | Delay Type | Path Delay | Path Required | CPPR  | Slack | Freq(MHz) |
++-------------------+-------------+------------+------------+---------------+-------+-------+-----------+
+| count_20__reg_p:D | core_clock  | max        | 0.448r     | 1.973         | 0.000 | 1.524 | 2103.032  |
+| count_21__reg_p:D | core_clock  | max        | 0.448r     | 1.973         | 0.000 | 1.525 | 2104.851  |
+| count_19__reg_p:D | core_clock  | max        | 0.445r     | 1.973         | 0.000 | 1.528 | 2117.177  |
+| count_18__reg_p:D | core_clock  | max        | 0.438r     | 1.973         | 0.000 | 1.535 | 2149.280  |
+| count_17__reg_p:D | core_clock  | max        | 0.438r     | 1.973         | 0.000 | 1.535 | 2149.299  |
+| count_21__reg_p:D | core_clock  | min        | 0.114f     | -0.008        | 0.000 | 0.122 | NA        |
+| count_20__reg_p:D | core_clock  | min        | 0.114f     | -0.008        | 0.000 | 0.122 | NA        |
+| count_19__reg_p:D | core_clock  | min        | 0.119f     | -0.008        | 0.000 | 0.127 | NA        |
+| led[0]_reg_p:D    | core_clock  | min        | 0.121f     | -0.009        | 0.000 | 0.130 | NA        |
+| count_15__reg_p:D | core_clock  | min        | 0.122f     | -0.008        | 0.000 | 0.130 | NA        |
++-------------------+-------------+------------+------------+---------------+-------+-------+-----------+
+I20260726 20:32:03.008198  4232 Sta.cc:1886] 
++------------+------------+-------+
+| Clock      | Delay Type | TNS   |
++------------+------------+-------+
+| core_clock | max        | 0.000 |
+| core_clock | min        | 0.000 |
++------------+------------+-------+
+I20260726 20:32:03.014974  4232 NetlistWriter.cc:52] start write verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.v
+I20260726 20:32:03.019701  4232 NetlistWriter.cc:71] finish write verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.v
+I20260726 20:32:03.019830  4232 Sta.cc:3111] used lib: /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CL/liberty/ics55_LLSC_H7CL_typ_tt_1p2_25_nldm.lib
+I20260726 20:32:03.019932  4232 Sta.cc:3096] The timing engine run success.
+I20260726 20:32:03.023100  4232 Power.cc:854] build graph and seq graph start
+I20260726 20:32:03.024264  4232 PwrBuildGraph.cc:80] build power graph start
+I20260726 20:32:03.025517  4232 PwrBuildGraph.cc:170] build power graph end
+I20260726 20:32:03.025630  4232 PwrBuildGraph.cc:172] build power graph memory usage 0MB
+I20260726 20:32:03.025656  4232 PwrBuildGraph.cc:174] build power graph time elapsed 0.001393s
+I20260726 20:32:03.025686  4232 PwrBuildSeqGraph.cc:326] build seq graph start
+I20260726 20:32:03.080602  4232 PwrBuildSeqGraph.cc:330] build seq graph end
+I20260726 20:32:03.080696  4232 PwrBuildSeqGraph.cc:332] seq inst num: 48
+I20260726 20:32:03.080710  4232 PwrBuildSeqGraph.cc:333] input port num: 2
+I20260726 20:32:03.080715  4232 PwrBuildSeqGraph.cc:334] output port num: 16
+I20260726 20:32:03.080717  4232 PwrBuildSeqGraph.cc:335] seq macro num: 0
+I20260726 20:32:03.080731  4232 PwrBuildSeqGraph.cc:336] seq arc num: 1320
+I20260726 20:32:03.080734  4232 PwrBuildSeqGraph.cc:339] seq vertex max fanout: 39
+I20260726 20:32:03.080737  4232 PwrBuildSeqGraph.cc:340] seq vertex max fanin: 35
+I20260726 20:32:03.080808  4232 PwrBuildSeqGraph.cc:343] build seq graph memory usage 131.944MB
+I20260726 20:32:03.080826  4232 PwrBuildSeqGraph.cc:345] build seq graph time elapsed 0.055141s
+I20260726 20:32:03.080834  4232 Power.cc:861] build graph and seq graph end
+I20260726 20:32:03.080865  4232 Power.cc:863] build graph and seq graph memory usage 131.944MB
+I20260726 20:32:03.080919  4232 Power.cc:866] build graph and seq graph time elapsed 0.057821s
+I20260726 20:32:03.080976  4232 Power.cc:871] power annotate vcd start
+I20260726 20:32:03.080994  4232 Power.cc:128] annotate toggle sp start
+I20260726 20:32:03.081007  4232 Power.cc:134] annotate toggle sp end
+I20260726 20:32:03.081012  4232 Power.cc:878] power vcd annotate end
+I20260726 20:32:03.081046  4232 Power.cc:880] power vcd annotate memory usage 0MB
+I20260726 20:32:03.081064  4232 Power.cc:882] power vcd annotate time elapsed 9e-05s
+I20260726 20:32:03.081085  4232 Power.cc:896] power propagation start
+I20260726 20:32:03.081121  4232 PwrCheckPipelineLoop.cc:122] check pipeline loop start
+I20260726 20:32:03.081650  4232 PwrCheckPipelineLoop.cc:129] check pipeline loop end
+I20260726 20:32:03.082043  4232 PwrCheckPipelineLoop.cc:137] check pipeline loop memory usage 0MB
+I20260726 20:32:03.082105  4232 PwrCheckPipelineLoop.cc:139] check pipeline loop time elapsed 0.000985s
+I20260726 20:32:03.082192  4232 PwrLevelizeSeqGraph.cc:93] seq levelization start
+I20260726 20:32:03.082279  4232 PwrLevelizeSeqGraph.cc:101] seq levelization end
+I20260726 20:32:03.082332  4232 PwrLevelizeSeqGraph.cc:103] the seq graph's level depth 42
+I20260726 20:32:03.082394  4232 PwrLevelizeSeqGraph.cc:116] levelization memory usage 0MB
+I20260726 20:32:03.082408  4232 PwrLevelizeSeqGraph.cc:118] levelization time elapsed 0.000216s
+I20260726 20:32:03.082826  4232 PwrPropagateConst.cc:184] propagate const start
+I20260726 20:32:03.082911  4232 PwrPropagateConst.cc:109] set tie cell fanout from count_31__reg_p_D_TIELOH7L_Z:Z data in vertex count_23__reg_p:D
+I20260726 20:32:03.083122  4232 PwrPropagateConst.cc:288] propagate const end
+I20260726 20:32:03.083220  4232 PwrPropagateConst.cc:290] propagate const memory usage 0MB
+I20260726 20:32:03.083238  4232 PwrPropagateConst.cc:292] propagate const time elapsed 0.000413s
+I20260726 20:32:03.083299  4232 PwrPropagateToggleSP.cc:202] propagate toggle sp start
+I20260726 20:32:03.105060  4232 PwrPropagateToggleSP.cc:316] propagate toggle sp end
+I20260726 20:32:03.105261  4232 PwrPropagateToggleSP.cc:319] propagate toggle sp memory usage 1114.25MB
+I20260726 20:32:03.105293  4232 PwrPropagateToggleSP.cc:321] propagate toggle sp time elapsed 0.021994s
+I20260726 20:32:03.105316  4232 PwrPropagateClock.cc:68] propagate clock start
+I20260726 20:32:03.105430  4232 PwrPropagateClock.cc:80] propagate clock end
+I20260726 20:32:03.105481  4232 PwrPropagateClock.cc:82] propagate clock memory usage 0MB
+I20260726 20:32:03.105567  4232 PwrPropagateClock.cc:84] propagate clock time elapsed 0.000249s
+I20260726 20:32:03.105589  4232 Power.cc:914] power propagation end
+I20260726 20:32:03.105626  4232 Power.cc:916] power propagation memory usage 1114.25MB
+I20260726 20:32:03.105633  4232 Power.cc:918] power propagation time elapsed 0.024548s
+I20260726 20:32:03.105657  4232 Power.cc:267] power calculation start
+I20260726 20:32:03.105671  4232 PwrCalcLeakagePower.cc:85] calc leakage power start
+I20260726 20:32:03.137274  4232 PwrCalcLeakagePower.cc:119] calc leakage power result 0.000500376mw
+I20260726 20:32:03.137419  4232 PwrCalcLeakagePower.cc:122] calc leakage power end
+I20260726 20:32:03.137517  4232 PwrCalcLeakagePower.cc:124] calc leakage power memory usage 0MB
+I20260726 20:32:03.137526  4232 PwrCalcLeakagePower.cc:126] calc leakage power time elapsed 0.031855s
+I20260726 20:32:03.137548  4232 PwrCalcInternalPower.cc:565] calc internal power start
+[0;31mE20260726 20:32:03.156311  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156463  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156489  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156497  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156502  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156508  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156513  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156518  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156524  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156529  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156535  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.156540  4232 PwrCalcInternalPower.cc:97] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A rise slew is not exist.
+[m[0;31mE20260726 20:32:03.157001  4232 PwrCalcInternalPower.cc:205] count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B:A input slew is not exist.
+[m[0;31mE20260726 20:32:03.175158  4232 PwrCalcInternalPower.cc:97] led[0]_reg_p_D_MUXI2X0P5H7L_Y_A_NOR2X0P5H7L_Y:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.175309  4232 PwrCalcInternalPower.cc:97] led[0]_reg_p_D_MUXI2X0P5H7L_Y_A_NOR2X0P5H7L_Y:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.175387  4232 PwrCalcInternalPower.cc:205] led[0]_reg_p_D_MUXI2X0P5H7L_Y_A_NOR2X0P5H7L_Y:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.175457  4232 PwrCalcInternalPower.cc:97] led[0]_reg_p_D_MUXI2X0P5H7L_Y_B_NOR2X0P5H7L_Y:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.175483  4232 PwrCalcInternalPower.cc:97] led[0]_reg_p_D_MUXI2X0P5H7L_Y_B_NOR2X0P5H7L_Y:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.175832  4232 PwrCalcInternalPower.cc:97] led[10]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.175910  4232 PwrCalcInternalPower.cc:97] led[10]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.176352  4232 PwrCalcInternalPower.cc:97] led[11]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.176422  4232 PwrCalcInternalPower.cc:97] led[11]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.176461  4232 PwrCalcInternalPower.cc:205] led[11]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.176858  4232 PwrCalcInternalPower.cc:97] led[12]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.176935  4232 PwrCalcInternalPower.cc:97] led[12]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177222  4232 PwrCalcInternalPower.cc:97] led[13]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177276  4232 PwrCalcInternalPower.cc:97] led[13]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177316  4232 PwrCalcInternalPower.cc:205] led[13]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.177832  4232 PwrCalcInternalPower.cc:97] led[15]_reg_p_D_MUX2X1P4H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177906  4232 PwrCalcInternalPower.cc:97] led[15]_reg_p_D_MUX2X1P4H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177987  4232 PwrCalcInternalPower.cc:97] led[15]_reg_p_D_MUX2X1P4H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.177996  4232 PwrCalcInternalPower.cc:97] led[15]_reg_p_D_MUX2X1P4H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.178458  4232 PwrCalcInternalPower.cc:97] led[1]_reg_p_D_MUX2X1P4H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.178542  4232 PwrCalcInternalPower.cc:97] led[1]_reg_p_D_MUX2X1P4H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.178584  4232 PwrCalcInternalPower.cc:205] led[1]_reg_p_D_MUX2X1P4H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.178680  4232 PwrCalcInternalPower.cc:97] led[1]_reg_p_D_MUX2X1P4H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.178885  4232 PwrCalcInternalPower.cc:97] led[1]_reg_p_D_MUX2X1P4H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.179414  4232 PwrCalcInternalPower.cc:97] led[3]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.179479  4232 PwrCalcInternalPower.cc:97] led[3]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.179512  4232 PwrCalcInternalPower.cc:205] led[3]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.179546  4232 PwrCalcInternalPower.cc:97] led[3]_reg_p_D_MUX2X0P5H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.179551  4232 PwrCalcInternalPower.cc:97] led[3]_reg_p_D_MUX2X0P5H7L_Y_B_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.179793  4232 PwrCalcInternalPower.cc:97] led[4]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.180171  4232 PwrCalcInternalPower.cc:97] led[4]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.181346  4232 PwrCalcInternalPower.cc:97] led[5]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.181434  4232 PwrCalcInternalPower.cc:97] led[5]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.181471  4232 PwrCalcInternalPower.cc:205] led[5]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.181964  4232 PwrCalcInternalPower.cc:97] led[6]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.182039  4232 PwrCalcInternalPower.cc:97] led[6]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.183284  4232 PwrCalcInternalPower.cc:97] led[7]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.183352  4232 PwrCalcInternalPower.cc:97] led[7]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.183385  4232 PwrCalcInternalPower.cc:205] led[7]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B input slew is not exist.
+[m[0;31mE20260726 20:32:03.184106  4232 PwrCalcInternalPower.cc:97] led[8]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.184196  4232 PwrCalcInternalPower.cc:97] led[8]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.184592  4232 PwrCalcInternalPower.cc:97] led[9]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.184669  4232 PwrCalcInternalPower.cc:97] led[9]_reg_p_D_MUX2X0P5H7L_Y_A_NOR2BX1H7L_Z:B rise slew is not exist.
+[m[0;31mE20260726 20:32:03.184739  4232 PwrCalcInternalPower.cc:205] rst_BUFX3H7L_A:A input slew is not exist.
+[mI20260726 20:32:03.184908  4232 PwrCalcInternalPower.cc:605] calc internal power result 0.788226mW
+I20260726 20:32:03.185098  4232 PwrCalcInternalPower.cc:607] calc internal power end
+I20260726 20:32:03.185187  4232 PwrCalcInternalPower.cc:609] calc internal power memory usage 0MB
+I20260726 20:32:03.185237  4232 PwrCalcInternalPower.cc:611] calc internal power time elapsed 0.047688s
+I20260726 20:32:03.185307  4232 PwrCalcSwitchPower.cc:89] calc switch power start
+I20260726 20:32:03.186146  4232 PwrCalcSwitchPower.cc:173] calc switch power result 0mw
+I20260726 20:32:03.186214  4232 PwrCalcSwitchPower.cc:175] calc switch power end
+I20260726 20:32:03.186276  4232 PwrCalcSwitchPower.cc:177] calc switch power memory usage 0MB
+I20260726 20:32:03.186285  4232 PwrCalcSwitchPower.cc:179] calc switch power time elapsed 0.000979s
+I20260726 20:32:03.187659  4232 Power.cc:275] power calculation end
+I20260726 20:32:03.187784  4232 Power.cc:277] power calculation memory usage 0MB
+I20260726 20:32:03.187803  4232 Power.cc:279] power calculation time elapsed 0.082147s
+I20260726 20:32:03.187825  4232 Power.cc:981] power report start, output dir: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260726 20:32:03.188869  4232 Power.cc:491] 
++---------------+----------------+--------------+---------------+-------------+-----------+
+| Power Group   | Internal Power | Switch Power | Leakage Power | Total Power | (%)       |
++---------------+----------------+--------------+---------------+-------------+-----------+
+| combinational | 6.303e-04      | 0.000e+00    | 1.887e-07     | 6.305e-04   | (79.937%) |
+| sequential    | 1.579e-04      | 0.000e+00    | 3.117e-07     | 1.582e-04   | (20.063%) |
++---------------+----------------+--------------+---------------+-------------+-----------+
+I20260726 20:32:03.189105  4232 Power.cc:543] Total Power   ==  0.000788727 W
+I20260726 20:32:03.191118  4232 Power.cc:669] Instance Power Report: 
+I20260726 20:32:03.191195  4232 Power.cc:670] 
++-----------------------------------------------------------------------------------------------------+-----------------+----------------+--------------+---------------+-------------+
+| Instance Name                                                                                       | Nominal Voltage | Internal Power | Switch Power | Leakage Power | Total Power |
++-----------------------------------------------------------------------------------------------------+-----------------+----------------+--------------+---------------+-------------+
+| count_21__reg_p_D_AOI21X2H7L_Y_A1_OR3X1P4H7L_Y                                                      | 1.2             | 3.943e-05      | 0.000e+00    | 1.697e-09     | 3.943e-05   |
+| count_12__NAND4X0P5H7L_A_Y_OR4X1P4H7L_C                                                             | 1.2             | 3.940e-05      | 0.000e+00    | 1.616e-09     | 3.941e-05   |
+| count_16__reg_p_D_NOR2X3H7L_Y_B_XNOR2X3H7L_Y                                                        | 1.2             | 3.708e-05      | 0.000e+00    | 4.086e-09     | 3.708e-05   |
+| count_20__reg_p_D_AOI21X2H7L_Y_A1_OR3X1P4H7L_Y                                                      | 1.2             | 3.691e-05      | 0.000e+00    | 1.699e-09     | 3.692e-05   |
+| count_19__reg_p_D_AOI21X1P4H7L_Y_A1_OR3X1H7L_Y                                                      | 1.2             | 3.261e-05      | 0.000e+00    | 1.577e-09     | 3.261e-05   |
+| count_21__reg_p_D_AOI21X2H7L_Y                                                                      | 1.2             | 2.338e-05      | 0.000e+00    | 1.029e-09     | 2.338e-05   |
+| count_12__NAND4X0P5H7L_A_Y_OR4X1P4H7L_C_Y_BUFX7H7L_A                                                | 1.2             | 2.287e-05      | 0.000e+00    | 4.862e-09     | 2.288e-05   |
+| count_20__reg_p_D_AOI21X2H7L_Y                                                                      | 1.2             | 2.204e-05      | 0.000e+00    | 1.029e-09     | 2.204e-05   |
+| count_19__reg_p_D_AOI21X1P4H7L_Y                                                                    | 1.2             | 1.824e-05      | 0.000e+00    | 8.879e-10     | 1.824e-05   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y                            | 1.2             | 1.338e-05      | 0.000e+00    | 9.228e-10     | 1.338e-05   |
+| count_18__reg_p_D_AOI2XB1X1H7L_Y                                                                    | 1.2             | 1.307e-05      | 0.000e+00    | 1.565e-09     | 1.307e-05   |
+| count_3__NAND4X6H7L_D                                                                               | 1.2             | 1.234e-05      | 0.000e+00    | 1.108e-09     | 1.234e-05   |
+| count_17__reg_p_D_AOI2XB1X1H7L_Y                                                                    | 1.2             | 1.010e-05      | 0.000e+00    | 1.572e-09     | 1.010e-05   |
+| count_21__reg_p_D_AOI21X2H7L_Y_A0_OAI21X0P5H7L_Y                                                    | 1.2             | 9.816e-06      | 0.000e+00    | 7.087e-10     | 9.817e-06   |
+| count_20__reg_p_D_AOI21X2H7L_Y_A0_OAI21X0P5H7L_Y                                                    | 1.2             | 9.310e-06      | 0.000e+00    | 7.088e-10     | 9.310e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_Y_BUFX16H7L_A                                | 1.2             | 9.237e-06      | 0.000e+00    | 1.085e-08     | 9.248e-06   |
+| count_20__reg_p_D_AOI21X2H7L_Y_A1_OR3X1P4H7L_Y_C_OR2X1P4H7L_B                                       | 1.2             | 9.080e-06      | 0.000e+00    | 1.694e-09     | 9.082e-06   |
+| count_7__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y                                                      | 1.2             | 8.733e-06      | 0.000e+00    | 3.103e-09     | 8.736e-06   |
+| count_18__reg_p_D_AOI2XB1X1H7L_Y_A0_OAI21X0P5H7L_Y                                                  | 1.2             | 8.722e-06      | 0.000e+00    | 7.102e-10     | 8.723e-06   |
+| count_3__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y                                                      | 1.2             | 8.474e-06      | 0.000e+00    | 3.075e-09     | 8.477e-06   |
+| count_20__reg_p_D_AOI21X2H7L_Y_A1_OR3X1P4H7L_Y_C_NAND4X0P5H7L_Y                                     | 1.2             | 8.150e-06      | 0.000e+00    | 2.112e-10     | 8.150e-06   |
+| count_12__NAND4X0P5H7L_A                                                                            | 1.2             | 8.032e-06      | 0.000e+00    | 2.055e-10     | 8.032e-06   |
+| count_19__reg_p_D_AOI21X1P4H7L_Y_A0_OAI21X0P5H7L_Y                                                  | 1.2             | 7.955e-06      | 0.000e+00    | 7.080e-10     | 7.955e-06   |
+| count_16__reg_p_D_NOR2X3H7L_Y                                                                       | 1.2             | 6.934e-06      | 0.000e+00    | 1.414e-09     | 6.935e-06   |
+| count_8__reg_p_D_AOI21X0P5H7L_Y_A1_OR3X1H7L_Y                                                       | 1.2             | 6.817e-06      | 0.000e+00    | 1.585e-09     | 6.819e-06   |
+| count_7__NAND4X6H7L_C                                                                               | 1.2             | 6.717e-06      | 0.000e+00    | 1.229e-09     | 6.718e-06   |
+| count_17__reg_p_D_AOI2XB1X1H7L_Y_A0_OAI21X0P5H7L_Y                                                  | 1.2             | 6.475e-06      | 0.000e+00    | 7.087e-10     | 6.476e-06   |
+| count_6__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y                                                      | 1.2             | 6.153e-06      | 0.000e+00    | 3.054e-09     | 6.156e-06   |
+| count_7__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y_B_NAND4X0P5H7L_Y                                     | 1.2             | 6.050e-06      | 0.000e+00    | 1.946e-10     | 6.050e-06   |
+| count_22__reg_p_D_AOI2BB1X1P4H7L_Y                                                                  | 1.2             | 5.851e-06      | 0.000e+00    | 1.872e-09     | 5.853e-06   |
+| count_2__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y                                                      | 1.2             | 5.601e-06      | 0.000e+00    | 3.126e-09     | 5.605e-06   |
+| count_22__reg_p_D_AOI2BB1X1P4H7L_Y_A1N_NOR3BX1P4H7L_Y                                               | 1.2             | 5.138e-06      | 0.000e+00    | 1.348e-09     | 5.139e-06   |
+| count_12__NAND4X0P5H7L_A_Y_OR4X1P4H7L_C_D_NAND4X0P5H7L_Y                                            | 1.2             | 4.825e-06      | 0.000e+00    | 2.382e-10     | 4.825e-06   |
+| count_8__reg_p_D_AOI21X0P5H7L_Y                                                                     | 1.2             | 4.692e-06      | 0.000e+00    | 6.992e-10     | 4.692e-06   |
+| count_18__reg_p_D_AOI2XB1X1H7L_Y_A1N_NOR3X1P4H7L_Y                                                  | 1.2             | 4.308e-06      | 0.000e+00    | 5.131e-10     | 4.308e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A                                              | 1.2             | 4.292e-06      | 0.000e+00    | 8.923e-10     | 4.293e-06   |
+| count_1__reg_p                                                                                      | 1.2             | 3.974e-06      | 0.000e+00    | 6.473e-09     | 3.981e-06   |
+| count_6__reg_p                                                                                      | 1.2             | 3.974e-06      | 0.000e+00    | 6.493e-09     | 3.980e-06   |
+| count_5__reg_p                                                                                      | 1.2             | 3.973e-06      | 0.000e+00    | 6.474e-09     | 3.980e-06   |
+| count_2__reg_p                                                                                      | 1.2             | 3.973e-06      | 0.000e+00    | 6.493e-09     | 3.980e-06   |
+| count_3__reg_p                                                                                      | 1.2             | 3.972e-06      | 0.000e+00    | 6.497e-09     | 3.978e-06   |
+| count_8__reg_p                                                                                      | 1.2             | 3.972e-06      | 0.000e+00    | 6.590e-09     | 3.978e-06   |
+| count_7__reg_p                                                                                      | 1.2             | 3.972e-06      | 0.000e+00    | 6.497e-09     | 3.978e-06   |
+| count_10__reg_p                                                                                     | 1.2             | 3.971e-06      | 0.000e+00    | 6.445e-09     | 3.978e-06   |
+| count_11__reg_p                                                                                     | 1.2             | 3.970e-06      | 0.000e+00    | 6.590e-09     | 3.977e-06   |
+| count_14__reg_p                                                                                     | 1.2             | 3.970e-06      | 0.000e+00    | 6.425e-09     | 3.977e-06   |
+| count_9__reg_p                                                                                      | 1.2             | 3.970e-06      | 0.000e+00    | 6.436e-09     | 3.976e-06   |
+| count_17__reg_p                                                                                     | 1.2             | 3.970e-06      | 0.000e+00    | 6.453e-09     | 3.976e-06   |
+| count_18__reg_p                                                                                     | 1.2             | 3.969e-06      | 0.000e+00    | 6.462e-09     | 3.975e-06   |
+| count_13__reg_p                                                                                     | 1.2             | 3.969e-06      | 0.000e+00    | 6.425e-09     | 3.975e-06   |
+| count_12__reg_p                                                                                     | 1.2             | 3.969e-06      | 0.000e+00    | 6.429e-09     | 3.975e-06   |
+| count_16__reg_p                                                                                     | 1.2             | 3.968e-06      | 0.000e+00    | 6.497e-09     | 3.975e-06   |
+| count_15__reg_p                                                                                     | 1.2             | 3.967e-06      | 0.000e+00    | 6.590e-09     | 3.973e-06   |
+| count_19__reg_p                                                                                     | 1.2             | 3.967e-06      | 0.000e+00    | 6.590e-09     | 3.973e-06   |
+| count_21__reg_p                                                                                     | 1.2             | 3.965e-06      | 0.000e+00    | 6.590e-09     | 3.972e-06   |
+| count_20__reg_p                                                                                     | 1.2             | 3.965e-06      | 0.000e+00    | 6.590e-09     | 3.971e-06   |
+| led[1]_reg_p                                                                                        | 1.2             | 3.964e-06      | 0.000e+00    | 6.408e-09     | 3.970e-06   |
+| count_22__reg_p                                                                                     | 1.2             | 3.962e-06      | 0.000e+00    | 6.440e-09     | 3.969e-06   |
+| led[0]_reg_p                                                                                        | 1.2             | 3.961e-06      | 0.000e+00    | 6.913e-09     | 3.968e-06   |
+| led[3]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[10]_reg_p                                                                                       | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[9]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[6]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[11]_reg_p                                                                                       | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[2]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[4]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[12]_reg_p                                                                                       | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[8]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[13]_reg_p                                                                                       | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[14]_reg_p                                                                                       | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[5]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[7]_reg_p                                                                                        | 1.2             | 3.799e-06      | 0.000e+00    | 6.401e-09     | 3.806e-06   |
+| led[15]_reg_p                                                                                       | 1.2             | 3.796e-06      | 0.000e+00    | 6.401e-09     | 3.803e-06   |
+| count_15__reg_p_D_AOI21X0P5H7L_Y                                                                    | 1.2             | 3.780e-06      | 0.000e+00    | 6.992e-10     | 3.781e-06   |
+| count_11__reg_p_D_AOI21X0P5H7L_Y                                                                    | 1.2             | 3.713e-06      | 0.000e+00    | 6.992e-10     | 3.714e-06   |
+| count_4__reg_p                                                                                      | 1.2             | 3.649e-06      | 0.000e+00    | 6.406e-09     | 3.655e-06   |
+| count_0__reg_p                                                                                      | 1.2             | 3.465e-06      | 0.000e+00    | 6.404e-09     | 3.472e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_C_NAND3X0P5H7L_Y                             | 1.2             | 3.468e-06      | 0.000e+00    | 3.210e-10     | 3.469e-06   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y_D_NAND3X0P5H7L_Y                   | 1.2             | 3.425e-06      | 0.000e+00    | 3.398e-10     | 3.426e-06   |
+| count_19__reg_p_D_AOI21X1P4H7L_Y_A1_OR3X1H7L_Y_B_NAND3X0P5H7L_Y                                     | 1.2             | 3.411e-06      | 0.000e+00    | 3.357e-10     | 3.411e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0                                         | 1.2             | 3.403e-06      | 0.000e+00    | 6.659e-10     | 3.403e-06   |
+| led[0]_reg_p_D_MUXI2X0P5H7L_Y                                                                       | 1.2             | 3.377e-06      | 0.000e+00    | 2.949e-09     | 3.380e-06   |
+| count_3__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y_B_NAND3X0P5H7L_Y                                     | 1.2             | 3.271e-06      | 0.000e+00    | 3.323e-10     | 3.271e-06   |
+| count_5__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y                                                      | 1.2             | 3.185e-06      | 0.000e+00    | 3.175e-09     | 3.188e-06   |
+| count_17__reg_p_D_AOI2XB1X1H7L_Y_A1N_NOR3X1P4H7L_Y                                                  | 1.2             | 3.145e-06      | 0.000e+00    | 4.953e-10     | 3.146e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0_A1_OAI2BB1X0P5H7L_Y_B0_OA31X1H7L_Y      | 1.2             | 3.127e-06      | 0.000e+00    | 1.406e-09     | 3.129e-06   |
+| count_15__reg_p_D_AOI21X0P5H7L_Y_A1_NAND3BX0P5H7L_Y                                                 | 1.2             | 3.098e-06      | 0.000e+00    | 9.594e-10     | 3.099e-06   |
+| count_1__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                     | 1.2             | 3.095e-06      | 0.000e+00    | 3.148e-09     | 3.098e-06   |
+| count_14__reg_p_D_NOR2X1P4H7L_Y_B_XNOR2X0P5H7L_Y                                                    | 1.2             | 2.987e-06      | 0.000e+00    | 3.229e-09     | 2.990e-06   |
+| count_11__reg_p_D_AOI21X0P5H7L_Y_A1_NAND3BX0P5H7L_Y                                                 | 1.2             | 2.899e-06      | 0.000e+00    | 9.710e-10     | 2.900e-06   |
+| led[1]_reg_p_D_MUX2X1P4H7L_Y                                                                        | 1.2             | 2.804e-06      | 0.000e+00    | 2.477e-09     | 2.807e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_C_NOR4X0P5H7L_Y            | 1.2             | 2.698e-06      | 0.000e+00    | 4.497e-10     | 2.699e-06   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                    | 1.2             | 2.616e-06      | 0.000e+00    | 3.229e-09     | 2.619e-06   |
+| count_10__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                    | 1.2             | 2.556e-06      | 0.000e+00    | 3.194e-09     | 2.559e-06   |
+| count_9__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                     | 1.2             | 2.533e-06      | 0.000e+00    | 3.211e-09     | 2.536e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_D_NOR4X0P5H7L_Y            | 1.2             | 2.452e-06      | 0.000e+00    | 4.089e-10     | 2.452e-06   |
+| count_12__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                    | 1.2             | 2.425e-06      | 0.000e+00    | 3.222e-09     | 2.428e-06   |
+| led[15]_reg_p_D_MUX2X1P4H7L_Y                                                                       | 1.2             | 2.359e-06      | 0.000e+00    | 2.454e-09     | 2.361e-06   |
+| led[2]_reg_p_D_MUX2X1P4H7L_Y                                                                        | 1.2             | 2.357e-06      | 0.000e+00    | 2.454e-09     | 2.359e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_C_NAND3X0P5H7L_Y_C_NOR4X0P5H7L_Y             | 1.2             | 2.325e-06      | 0.000e+00    | 3.803e-10     | 2.325e-06   |
+| count_6__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y_B_NAND3X0P5H7L_Y                                     | 1.2             | 2.276e-06      | 0.000e+00    | 3.126e-10     | 2.276e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0_Y_BUFX3H7L_A                            | 1.2             | 2.199e-06      | 0.000e+00    | 2.229e-09     | 2.201e-06   |
+| led[7]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[13]_reg_p_D_MUX2X0P5H7L_Y                                                                       | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[5]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[6]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[4]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[12]_reg_p_D_MUX2X0P5H7L_Y                                                                       | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[9]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[11]_reg_p_D_MUX2X0P5H7L_Y                                                                       | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[8]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[10]_reg_p_D_MUX2X0P5H7L_Y                                                                       | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[3]_reg_p_D_MUX2X0P5H7L_Y                                                                        | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| led[14]_reg_p_D_MUX2X0P5H7L_Y                                                                       | 1.2             | 2.096e-06      | 0.000e+00    | 2.309e-09     | 2.099e-06   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y_D_NOR4X1P4H7L_C                    | 1.2             | 2.072e-06      | 0.000e+00    | 3.269e-10     | 2.072e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0_B0_AOAI211X0P5H7L_Y                     | 1.2             | 1.906e-06      | 0.000e+00    | 6.914e-10     | 1.907e-06   |
+| count_8__reg_p_D_AOI21X0P5H7L_Y_A0_OAI21X0P5H7L_Y                                                   | 1.2             | 1.867e-06      | 0.000e+00    | 7.087e-10     | 1.868e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_C_NAND3X0P5H7L_Y_A_NOR3X0P5H7L_Y             | 1.2             | 1.807e-06      | 0.000e+00    | 6.828e-10     | 1.808e-06   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y_D_NOR4X1P4H7L_C_D_NAND3X0P5H7L_Y   | 1.2             | 1.585e-06      | 0.000e+00    | 3.878e-10     | 1.586e-06   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_B_NOR3X0P5H7L_Y            | 1.2             | 1.578e-06      | 0.000e+00    | 5.729e-10     | 1.579e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0_A1_OAI2BB1X0P5H7L_Y                     | 1.2             | 1.481e-06      | 0.000e+00    | 1.099e-09     | 1.483e-06   |
+| count_26__NOR4X0P5H7L_A_Y_AND4X0P5H7L_B_Y_AOAI211X0P5H7L_C0_A1_OAI2BB1X0P5H7L_Y_A1N_OAI211X0P7H7L_Y | 1.2             | 1.470e-06      | 0.000e+00    | 5.716e-10     | 1.471e-06   |
+| count_7__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 1.358e-06      | 0.000e+00    | 5.905e-10     | 1.359e-06   |
+| count_3__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 1.324e-06      | 0.000e+00    | 5.905e-10     | 1.325e-06   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y                                    | 1.2             | 1.273e-06      | 0.000e+00    | 2.555e-10     | 1.274e-06   |
+| count_18__reg_p_D_AOI2XB1X1H7L_Y_A1N_NOR3X1P4H7L_Y_B_NAND2X0P5H7L_Y                                 | 1.2             | 1.170e-06      | 0.000e+00    | 4.964e-10     | 1.171e-06   |
+| count_12__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y_D_NAND2X0P5H7L_Y                   | 1.2             | 1.163e-06      | 0.000e+00    | 5.160e-10     | 1.164e-06   |
+| count_12__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y                                    | 1.2             | 1.157e-06      | 0.000e+00    | 2.604e-10     | 1.157e-06   |
+| count_2__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y_B_NAND2X0P5H7L_Y                                     | 1.2             | 1.108e-06      | 0.000e+00    | 4.813e-10     | 1.109e-06   |
+| count_6__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 1.093e-06      | 0.000e+00    | 5.887e-10     | 1.094e-06   |
+| count_2__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 1.059e-06      | 0.000e+00    | 5.886e-10     | 1.059e-06   |
+| count_9__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR3BX0P5H7L_Y                                    | 1.2             | 1.043e-06      | 0.000e+00    | 1.247e-09     | 1.044e-06   |
+| count_11__reg_p_D_AOI21X0P5H7L_Y_A0_OAI2BB1X0P5H7L_Y                                                | 1.2             | 1.011e-06      | 0.000e+00    | 1.059e-09     | 1.012e-06   |
+| count_14__reg_p_D_NOR2X1P4H7L_Y                                                                     | 1.2             | 9.402e-07      | 0.000e+00    | 7.056e-10     | 9.409e-07   |
+| count_15__reg_p_D_AOI21X0P5H7L_Y_A0_OAI2BB1X0P5H7L_Y                                                | 1.2             | 9.297e-07      | 0.000e+00    | 1.048e-09     | 9.308e-07   |
+| count_4__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y                                                     | 1.2             | 8.501e-07      | 0.000e+00    | 3.262e-09     | 8.534e-07   |
+| count_5__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 8.105e-07      | 0.000e+00    | 5.791e-10     | 8.111e-07   |
+| count_24__reg_p                                                                                     | 1.2             | 7.930e-07      | 0.000e+00    | 6.544e-09     | 7.995e-07   |
+| count_30__reg_p                                                                                     | 1.2             | 7.929e-07      | 0.000e+00    | 6.544e-09     | 7.995e-07   |
+| count_27__reg_p                                                                                     | 1.2             | 7.929e-07      | 0.000e+00    | 6.544e-09     | 7.995e-07   |
+| count_26__reg_p                                                                                     | 1.2             | 7.929e-07      | 0.000e+00    | 6.544e-09     | 7.995e-07   |
+| count_31__reg_p                                                                                     | 1.2             | 7.929e-07      | 0.000e+00    | 6.544e-09     | 7.995e-07   |
+| count_28__reg_p                                                                                     | 1.2             | 7.929e-07      | 0.000e+00    | 6.544e-09     | 7.994e-07   |
+| count_25__reg_p                                                                                     | 1.2             | 7.928e-07      | 0.000e+00    | 6.544e-09     | 7.994e-07   |
+| count_29__reg_p                                                                                     | 1.2             | 7.928e-07      | 0.000e+00    | 6.544e-09     | 7.994e-07   |
+| count_1__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 7.751e-07      | 0.000e+00    | 5.787e-10     | 7.757e-07   |
+| count_10__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR3X0P5H7L_Y                                    | 1.2             | 7.565e-07      | 0.000e+00    | 3.897e-10     | 7.568e-07   |
+| led[1]_reg_p_D_MUX2X1P4H7L_Y_B_NOR2BX1H7L_Z                                                         | 1.2             | 7.498e-07      | 0.000e+00    | 1.346e-09     | 7.511e-07   |
+| count_10__reg_p_D_NOR2X0P5H7L_Y                                                                     | 1.2             | 6.910e-07      | 0.000e+00    | 5.662e-10     | 6.916e-07   |
+| count_9__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 6.796e-07      | 0.000e+00    | 5.620e-10     | 6.802e-07   |
+| count_13__reg_p_D_NOR2X0P5H7L_Y                                                                     | 1.2             | 6.738e-07      | 0.000e+00    | 5.576e-10     | 6.744e-07   |
+| count_12__reg_p_D_NOR2X0P5H7L_Y                                                                     | 1.2             | 6.615e-07      | 0.000e+00    | 5.591e-10     | 6.621e-07   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_AN_OR2X0P5H7L_Y            | 1.2             | 6.061e-07      | 0.000e+00    | 1.488e-09     | 6.075e-07   |
+| count_5__reg_p_D_NOR2X0P5H7L_Y_B_XOR2X0P5H7L_Y_B_NAND2X0P5H7L_Y                                     | 1.2             | 5.891e-07      | 0.000e+00    | 4.100e-10     | 5.895e-07   |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A                                                            | 1.2             | 5.781e-07      | 0.000e+00    | 3.064e-10     | 5.784e-07   |
+| count_4__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 4.960e-07      | 0.000e+00    | 5.502e-10     | 4.965e-07   |
+| count_0__reg_p_D_NOR2X0P5H7L_Y                                                                      | 1.2             | 4.808e-07      | 0.000e+00    | 5.498e-10     | 4.813e-07   |
+| led[0]_reg_p_D_MUXI2X0P5H7L_Y_B_NOR2X0P5H7L_Y                                                       | 1.2             | 3.378e-07      | 0.000e+00    | 6.672e-10     | 3.385e-07   |
+| count_3__AND4X0P5H7L_D                                                                              | 1.2             | 3.331e-07      | 0.000e+00    | 5.293e-10     | 3.336e-07   |
+| rst_BUFX3H7L_A                                                                                      | 1.2             | 2.971e-07      | 0.00
+I20260726 20:32:03.196216  4232 Power.cc:1047] power report end, output dir: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260726 20:32:03.196379  4232 Power.cc:1049] power report memory usage 0MB
+I20260726 20:32:03.196400  4232 Power.cc:1051] power report time elapsed 0.008577s

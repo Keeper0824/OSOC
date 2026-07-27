@@ -1,0 +1,15 @@
+Generate the report at 2026-07-26T20:32:03, GitVersion: aa25008b3778a76ae1975c839d4cc459f7f7b3b7.
++--------------------------------------------------------------------------------------------+----------------+---------------+------------------+---------------+------+
+| Net / Pin                                                                                  | MaxCapacitance | Capacitance   | CapacitanceSlack | LibCellPort   | Note |
++--------------------------------------------------------------------------------------------+----------------+---------------+------------------+---------------+------+
+| count_26__NOR4X0P5H7L_A_Y                                                                  |                |               |                  |               |      |
+| count_26__NOR4X0P5H7L_A:Y                                                                  | 0.011r/0.011f  | 0.001r/0.001f | 0.010r/0.010f    | NOR4X0P5H7L/Y |      |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_D                 |                |               |                  |               |      |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_D_NOR4X0P5H7L_Y:Y | 0.011r/0.011f  | 0.001r/0.001f | 0.010r/0.010f    | NOR4X0P5H7L/Y |      |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_C                 |                |               |                  |               |      |
+| count_26__NOR4X0P5H7L_A_Y_NAND3X0P5H7L_A_Y_NOR3X3H7L_A_B_NAND4BX1P4H7L_Y_C_NOR4X0P5H7L_Y:Y | 0.011r/0.011f  | 0.001r/0.001f | 0.010r/0.010f    | NOR4X0P5H7L/Y |      |
+| count_12__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B                                         |                |               |                  |               |      |
+| count_12__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y:Y                         | 0.011r/0.011f  | 0.001r/0.001f | 0.010r/0.010f    | NOR4X0P5H7L/Y |      |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B                                         |                |               |                  |               |      |
+| count_13__reg_p_D_NOR2X0P5H7L_Y_B_XNOR2X0P5H7L_Y_B_NOR4X0P5H7L_Y:Y                         | 0.011r/0.011f  | 0.001r/0.001f | 0.010r/0.010f    | NOR4X0P5H7L/Y |      |
++--------------------------------------------------------------------------------------------+----------------+---------------+------------------+---------------+------+

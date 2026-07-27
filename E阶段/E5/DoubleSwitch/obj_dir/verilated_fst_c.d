@@ -1,0 +1,20 @@
+verilated_fst_c.o: \
+ /home/sun/Desktop/verilator/include/verilated_fst_c.cpp \
+ /home/sun/Desktop/verilator/include/verilated.h \
+ /home/sun/Desktop/verilator/include/verilated_config.h \
+ /home/sun/Desktop/verilator/include/verilatedos.h \
+ /home/sun/Desktop/verilator/include/verilated_types.h \
+ /home/sun/Desktop/verilator/include/verilated_funcs.h \
+ /home/sun/Desktop/verilator/include/verilated_fst_c.h \
+ /home/sun/Desktop/verilator/include/verilated_trace.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_variable_info.cpp \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_variable_info.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_assertion.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_stream_write_helper.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_file.h \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_writer.cpp \
+ /home/sun/Desktop/verilator/include/fstcpp/fstcpp_writer.h \
+ /home/sun/Desktop/verilator/include/verilated_trace_imp.h \
+ /home/sun/Desktop/verilator/include/verilated_intrinsics.h \
+ /home/sun/Desktop/verilator/include/verilated_threads.h
