@@ -1,0 +1,10 @@
+top=top
+
+out (LD3,LD2,LD1,LD0)
+A (SW3,SW2,SW1,SW0)
+B (SW7,SW6,SW5,SW4)
+func (SW10,SW9,SW8)
+zero (LD4)
+overflow (LD5)
+carry (LD6)
+

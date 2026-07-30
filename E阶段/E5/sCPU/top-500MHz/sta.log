@@ -1,0 +1,506 @@
+I20260728 12:52:16.640962  6561 Sta.cc:383] read verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v start
+I20260728 12:52:16.641492  6561 VerilogParserRustC.cc:41] load verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v
+r str /home/sun/Desktop/yosys-sta/result/top-500MHz/top.netlist.v
+I20260728 12:52:16.649011  6561 Sta.cc:391] read verilog end
+I20260728 12:52:16.649206  6561 Sta.cc:309] load lib start
+I20260728 12:52:16.653249  6592 Sta.cc:287] read liberty /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib start 
+I20260728 12:52:16.653451  6592 LibParserRustC.cc:1285] load liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib
+rust read lib file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib
+I20260728 12:52:24.730741  6592 LibParserRustC.cc:1294] load liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib success.
+I20260728 12:52:24.730862  6592 Sta.cc:297] read liberty /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib end 
+I20260728 12:52:24.731406  6561 Sta.cc:328] load lib end
+I20260728 12:52:24.731565  6561 Sta.cc:417] link design top start
+I20260728 12:52:24.736320  6598 LibParserRustC.cc:1304] link liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib start.
+I20260728 12:52:24.737751  6598 LibParserRustC.cc:666] unkown attri name: voltage_map in /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib line no 28
+I20260728 12:52:43.808796  6598 LibParserRustC.cc:1310] link liberty file /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib success.
+I20260728 12:52:43.824641  6561 Sta.cc:889] assign seg1_0_ = seg0_0_
+I20260728 12:52:43.824958  6561 Sta.cc:1106] link design top end
+I20260728 12:52:43.824980  6561 Sta.cc:1108] design top inst num: 475
+I20260728 12:52:43.825024  6561 Sta.cc:1110] design top net num: 478
+I20260728 12:52:43.825042  6561 Sta.cc:1112] design top port num: 18
+I20260728 12:52:43.825117  6561 Sta.cc:181] read sdc /home/sun/Desktop/yosys-sta/scripts/default.sdc start 
+I20260728 12:52:43.826923  6561 CmdCreateClock.cc:124] create clock core_clock for pin/port: clk
+I20260728 12:52:43.826998  6561 Sta.cc:198] read sdc /home/sun/Desktop/yosys-sta/scripts/default.sdc end 
+I20260728 12:52:43.827044  6561 StaBuildGraph.cc:315] build graph start
+I20260728 12:52:43.831193  6561 StaBuildGraph.cc:216] net seg1_0_ has no driver.
+I20260728 12:52:43.833081  6561 StaBuildGraph.cc:332] build graph end
+I20260728 12:52:43.833225  6561 Sta.cc:2834] update timing start
+I20260728 12:52:43.833323  6561 StaApplySdc.cc:698] apply sdc start
+I20260728 12:52:43.833375  6561 StaApplySdc.cc:729] apply sdc end
+I20260728 12:52:43.833521  6561 StaClockPropagation.cc:324] ideal clock propagation start
+I20260728 12:52:43.833581  6561 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260728 12:52:43.833628  6561 StaClockPropagation.cc:203] clock propagate end to vertex R[3]_0__reg_p:CK
+I20260728 12:52:43.833714  6561 StaClockPropagation.cc:422] ideal clock propagation end
+I20260728 12:52:43.833771  6561 StaCheck.cc:129] found loop fwd start
+I20260728 12:52:43.834024  6561 StaCheck.cc:148] found loop fwd end
+I20260728 12:52:43.834088  6561 StaCheck.cc:150] found loop bwd start
+I20260728 12:52:43.834746  6561 StaCheck.cc:172] found loop bwd end
+I20260728 12:52:43.834864  6561 StaClockSlewDelayPropagation.cc:112] clock slew delay propagation start
+I20260728 12:52:43.834878  6561 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 1
+I20260728 12:52:43.834960  6561 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 24
+I20260728 12:52:43.835145  6561 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 4
+I20260728 12:52:43.835227  6561 StaClockSlewDelayPropagation.cc:130] propagating current clock queue vertexes number is 32
+I20260728 12:52:43.835358  6561 StaClockSlewDelayPropagation.cc:163] clock slew delay propagation end
+I20260728 12:52:43.835471  6561 StaClockSlewDelayPropagation.cc:166] clock slew delay propagation memory usage 0MB
+I20260728 12:52:43.835505  6561 StaClockSlewDelayPropagation.cc:169] clock slew delay propagation time elapsed 0.000641s
+I20260728 12:52:43.836020  6561 StaClockPropagation.cc:326] propagated(kNormal) clock propagation start
+I20260728 12:52:43.836082  6561 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260728 12:52:43.836103  6561 StaClockPropagation.cc:424] propagated(kNormal) clock propagation end
+I20260728 12:52:43.836110  6561 StaApplySdc.cc:698] apply sdc start
+I20260728 12:52:43.836115  6561 StaApplySdc.cc:729] apply sdc end
+I20260728 12:52:43.836119  6561 StaClockPropagation.cc:328] propagated(kGenerated) clock propagation start
+I20260728 12:52:43.836126  6561 StaClockPropagation.cc:354] clock propagation clock num: 1
+I20260728 12:52:43.836140  6561 StaClockPropagation.cc:426] propagated(kGenerated) clock propagation end
+I20260728 12:52:43.836146  6561 StaApplySdc.cc:698] apply sdc start
+I20260728 12:52:43.836150  6561 StaApplySdc.cc:729] apply sdc end
+I20260728 12:52:43.836156  6561 StaBuildPropTag.cc:325] build propagation tag start
+I20260728 12:52:43.836161  6561 StaBuildPropTag.cc:338] build propagation tag end
+I20260728 12:52:43.836169  6561 StaDataPropagation.cc:676] data fwd propagation start
+I20260728 12:52:43.836225  6561 StaDataPropagationBFS.cc:166] data fwd propagation bfs start
+I20260728 12:52:43.836416  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 54
+I20260728 12:52:43.845158  6634 StaDataPropagationBFS.cc:82] Thread 137787955209792 date fwd propagate found start vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_DFFQX1H7R_D:CK
+I20260728 12:52:43.845398  6640 StaDataPropagationBFS.cc:82] Thread 137787835668032 date fwd propagate found start vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_DFFQX1H7R_D:CK
+I20260728 12:52:43.845492  6632 StaDataPropagationBFS.cc:82] Thread 137787433014848 date fwd propagate found start vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_DFFQX1H7R_Q:CK
+I20260728 12:52:43.845536  6637 StaDataPropagationBFS.cc:82] Thread 137787930031680 date fwd propagate found start vertex.R[0]_0__reg_p:CK
+[0;31mE20260728 12:52:43.845625  6637 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260728 12:52:43.845847  6654 StaDataPropagationBFS.cc:82] Thread 137787718170176 date fwd propagate found start vertex.R[0]_3__reg_p:CK
+[0;31mE20260728 12:52:43.846627  6631 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260728 12:52:43.846791  6633 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260728 12:52:43.845450  6640 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260728 12:52:43.846853  6648 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260728 12:52:43.845273  6634 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260728 12:52:43.845551  6639 StaDataPropagationBFS.cc:82] Thread 137787844060736 date fwd propagate found start vertex.R[0]_1__reg_p:CK
+[0;31mE20260728 12:52:43.846206  6652 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260728 12:52:43.845080  6630 StaDataPropagationBFS.cc:82] Thread 137787416229440 date fwd propagate found start vertex.resetn
+[0;31mE20260728 12:52:43.846381  6649 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[m[0;31mE20260728 12:52:43.845539  6632 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260728 12:52:43.845561  6643 StaDataPropagationBFS.cc:82] Thread 137787810489920 date fwd propagate found start vertex.R[0]_2__reg_p:CK
+I20260728 12:52:43.845230  6635 StaDataPropagationBFS.cc:82] Thread 137787946817088 date fwd propagate found start vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y_B_XOR2X0P5H7R_Y_B_OA211X4H7R_A1_Y_DFFQX1H7R_D:CK
+I20260728 12:52:43.845099  6661 StaDataPropagationBFS.cc:82] Thread 137787449800256 date fwd propagate found start vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_DFFQX1H7R_D:CK
+[0;31mE20260728 12:52:43.847352  6655 Lib.cc:181] Warning: val outside table ranges:  val = 0; min_val = 0.0121961; max_val = 0.795659
+[mI20260728 12:52:43.855479  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 59
+I20260728 12:52:43.866185  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 156
+I20260728 12:52:43.877851  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 50
+I20260728 12:52:43.888238  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 219
+I20260728 12:52:43.895521  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 54
+I20260728 12:52:43.906677  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 181
+I20260728 12:52:43.916615  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 69
+I20260728 12:52:43.924299  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 137
+I20260728 12:52:43.933770  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 56
+I20260728 12:52:43.943784  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 124
+I20260728 12:52:43.963879  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 42
+I20260728 12:52:43.972645  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 118
+I20260728 12:52:43.984545  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 38
+I20260728 12:52:43.995702  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 73
+I20260728 12:52:44.006809  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 27
+I20260728 12:52:44.013620  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 53
+I20260728 12:52:44.021742  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 29
+I20260728 12:52:44.032263  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 45
+I20260728 12:52:44.074573  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 28
+I20260728 12:52:44.082701  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 58
+I20260728 12:52:44.092724  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 37
+I20260728 12:52:44.102481  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 40
+I20260728 12:52:44.110980  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 5
+I20260728 12:52:44.116828  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 5
+I20260728 12:52:44.124713  6561 StaDataPropagationBFS.cc:229] data fwd propagation bfs end
+I20260728 12:52:44.124907  6561 StaDataPropagationBFS.cc:232] data fwd propagation bfs memory usage 1513.8MB
+I20260728 12:52:44.124933  6561 StaDataPropagationBFS.cc:234] data fwd propagation bfs time elapsed 0.288709s
+I20260728 12:52:44.124985  6561 StaDataPropagation.cc:695] data fwd propagation end
+I20260728 12:52:44.125027  6561 StaDataPropagation.cc:676] data fwd propagation start
+I20260728 12:52:44.125074  6561 StaDataPropagationBFS.cc:166] data fwd propagation bfs start
+I20260728 12:52:44.125188  6561 StaDataPropagationBFS.cc:190] propagating current data queue vertexes number is 1
+I20260728 12:52:44.132090  6561 StaDataPropagationBFS.cc:229] data fwd propagation bfs end
+I20260728 12:52:44.132275  6561 StaDataPropagationBFS.cc:232] data fwd propagation bfs memory usage 0MB
+I20260728 12:52:44.132302  6561 StaDataPropagationBFS.cc:234] data fwd propagation bfs time elapsed 0.007229s
+I20260728 12:52:44.132318  6561 StaDataPropagation.cc:695] data fwd propagation end
+I20260728 12:52:44.132334  6561 StaAnalyze.cc:557] analyze timing path start
+I20260728 12:52:44.132341  6561 StaAnalyze.cc:565] analyze timing path end vertex 1 total 72 start
+[0;31mE20260728 12:52:44.132349  6561 StaAnalyze.cc:328] The output port seg1_1_ is not constrained
+[m[0;31mE20260728 12:52:44.132385  6561 StaAnalyze.cc:328] The output port seg1_1_ is not constrained
+[mI20260728 12:52:44.132391  6561 StaAnalyze.cc:599] analyze timing path end vertex 1 total 72 end
+[0;31mE20260728 12:52:44.132395  6561 StaAnalyze.cc:328] The output port seg0_5_ is not constrained
+[m[0;31mE20260728 12:52:44.132401  6561 StaAnalyze.cc:328] The output port seg0_5_ is not constrained
+[m[0;31mE20260728 12:52:44.132407  6561 StaAnalyze.cc:328] The output port seg1_3_ is not constrained
+[m[0;31mE20260728 12:52:44.132452  6561 StaAnalyze.cc:328] The output port seg1_3_ is not constrained
+[m[0;31mE20260728 12:52:44.132474  6561 StaAnalyze.cc:328] The output port seg1_0_ is not constrained
+[m[0;31mE20260728 12:52:44.132481  6561 StaAnalyze.cc:328] The output port seg1_0_ is not constrained
+[m[0;31mE20260728 12:52:44.132488  6561 StaAnalyze.cc:328] The output port seg0_0_ is not constrained
+[m[0;31mE20260728 12:52:44.132494  6561 StaAnalyze.cc:328] The output port seg0_0_ is not constrained
+[mI20260728 12:52:44.132534  6561 StaAnalyze.cc:303] add path data num 2 to R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_DFFQX1H7R_D:D
+I20260728 12:52:44.132597  6561 StaAnalyze.cc:565] analyze timing path end vertex 11 total 72 start
+I20260728 12:52:44.132614  6561 StaAnalyze.cc:599] analyze timing path end vertex 11 total 72 end
+I20260728 12:52:44.133091  6561 StaAnalyze.cc:565] analyze timing path end vertex 21 total 72 start
+I20260728 12:52:44.133165  6561 StaAnalyze.cc:599] analyze timing path end vertex 21 total 72 end
+I20260728 12:52:44.133270  6561 StaAnalyze.cc:565] analyze timing path end vertex 31 total 72 start
+I20260728 12:52:44.133283  6561 StaAnalyze.cc:599] analyze timing path end vertex 31 total 72 end
+I20260728 12:52:44.133366  6561 StaAnalyze.cc:565] analyze timing path end vertex 41 total 72 start
+I20260728 12:52:44.133417  6561 StaAnalyze.cc:599] analyze timing path end vertex 41 total 72 end
+I20260728 12:52:44.133563  6561 StaAnalyze.cc:565] analyze timing path end vertex 51 total 72 start
+I20260728 12:52:44.133587  6561 StaAnalyze.cc:599] analyze timing path end vertex 51 total 72 end
+I20260728 12:52:44.133646  6561 StaAnalyze.cc:565] analyze timing path end vertex 61 total 72 start
+I20260728 12:52:44.133702  6561 StaAnalyze.cc:599] analyze timing path end vertex 61 total 72 end
+I20260728 12:52:44.133785  6561 StaAnalyze.cc:565] analyze timing path end vertex 71 total 72 start
+I20260728 12:52:44.133795  6561 StaAnalyze.cc:303] add path data num 2 to pc_2__reg_p_D_NOR2BX1P4H7R_AN_Z_DFFQX1H7R_D:D
+I20260728 12:52:44.133843  6561 StaAnalyze.cc:599] analyze timing path end vertex 71 total 72 end
+I20260728 12:52:44.133875  6561 StaAnalyze.cc:603] analyze timing path end
+I20260728 12:52:44.133883  6561 StaApplySdc.cc:698] apply sdc start
+I20260728 12:52:44.133888  6561 StaApplySdc.cc:729] apply sdc end
+I20260728 12:52:44.133898  6561 StaDataPropagation.cc:698] data bwd propagation start
+I20260728 12:52:44.140012  6561 StaDataPropagation.cc:249] propagate start vertex R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_DFFQX1H7R_D:CK
+I20260728 12:52:44.140115  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_ICGX0P5H7R_E:E
+I20260728 12:52:44.140164  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_0__reg_p:D
+I20260728 12:52:44.140185  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_1__reg_p:D
+I20260728 12:52:44.140309  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_2__reg_p:D
+I20260728 12:52:44.140381  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_3__reg_p:D
+I20260728 12:52:44.140410  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_4__reg_p:D
+I20260728 12:52:44.140427  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_5__reg_p:D
+I20260728 12:52:44.140441  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_6__reg_p:D
+I20260728 12:52:44.140455  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_7__reg_p:D
+I20260728 12:52:44.140471  6561 StaDataPropagation.cc:172] Thread 137787987619968 data bwd propagate found end vertex.R[2]_7__reg_p_E_ICGX0P5H7R_E:E
+I20260728 12:52:44.149024  6561 StaDataPropagation.cc:703] data bwd propagation end
+I20260728 12:52:44.149130  6561 Sta.cc:2895] update timing end
+I20260728 12:52:44.149214  6561 Sta.cc:2898] update timing memory usage 1513.8MB
+I20260728 12:52:44.149231  6561 Sta.cc:2900] update timing time elapsed 0.316005s
+I20260728 12:52:44.149351  6561 Sta.cc:2998] start write sta report.
+I20260728 12:52:44.149386  6561 Sta.cc:2999] output sta report path: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260728 12:52:44.149827  6561 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260728 12:52:44.149976  6561 StaReport.cc:206] report the clock group **clock_gating_default** 5 timing paths.
+I20260728 12:52:44.151697  6561 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260728 12:52:44.152941  6561 StaReport.cc:206] report the clock group **clock_gating_default** 5 timing paths.
+I20260728 12:52:44.153241  6561 StaReport.cc:211] report the clock group core_clock 1 timing paths.
+I20260728 12:52:44.153319  6561 StaReport.cc:206] report the clock group **clock_gating_default** 1 timing paths.
+I20260728 12:52:44.153388  6561 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260728 12:52:44.153406  6561 StaReport.cc:206] report the clock group **clock_gating_default** 5 timing paths.
+I20260728 12:52:44.153719  6561 StaReport.cc:211] report the clock group core_clock 5 timing paths.
+I20260728 12:52:44.154093  6561 StaReport.cc:206] report the clock group **clock_gating_default** 5 timing paths.
+I20260728 12:52:44.154143  6561 StaReport.cc:211] report the clock group core_clock 1 timing paths.
+I20260728 12:52:44.154153  6561 StaReport.cc:206] report the clock group **clock_gating_default** 1 timing paths.
+I20260728 12:52:44.154156  6561 Sta.cc:1885] 
++----------------------------------------------------------------------------------------------------------------------------------+--------------------------+------------+------------+---------------+-------+-------+-----------+
+| Endpoint                                                                                                                         | Clock Group              | Delay Type | Path Delay | Path Required | CPPR  | Slack | Freq(MHz) |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------------+------------+------------+---------------+-------+-------+-----------+
+| R[1]_6__reg_p:D                                                                                                                  | core_clock               | max        | 0.745r     | 1.954         | 0.000 | 1.209 | 1264.861  |
+| R[1]_3__reg_p:D                                                                                                                  | core_clock               | max        | 0.749r     | 1.961         | 0.000 | 1.211 | 1267.716  |
+| R[0]_6__reg_p:D                                                                                                                  | core_clock               | max        | 0.745r     | 1.958         | 0.000 | 1.213 | 1270.186  |
+| R[1]_6__reg_p:D                                                                                                                  | core_clock               | max        | 0.739f     | 1.953         | 0.000 | 1.213 | 1271.165  |
+| R[0]_6__reg_p:D                                                                                                                  | core_clock               | max        | 0.739f     | 1.953         | 0.000 | 1.213 | 1271.165  |
+| R[1]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | max        | 0.556r     | 1.925         | 0.000 | 1.368 | NA        |
+| R[2]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | max        | 0.499r     | 1.926         | 0.000 | 1.428 | NA        |
+| R[0]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | max        | 0.480r     | 1.934         | 0.000 | 1.454 | NA        |
+| R[0]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | max        | 0.435f     | 1.959         | 0.000 | 1.524 | NA        |
+| R[1]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | max        | 0.405f     | 1.957         | 0.000 | 1.552 | NA        |
+| out_1__reg_p:D                                                                                                                   | core_clock               | min        | 0.152f     | -0.006        | 0.000 | 0.158 | NA        |
+| R[2]_3__reg_p:D                                                                                                                  | core_clock               | min        | 0.172f     | -0.003        | 0.000 | 0.174 | NA        |
+| R[2]_1__reg_p:D                                                                                                                  | core_clock               | min        | 0.175f     | -0.004        | 0.000 | 0.179 | NA        |
+| R[2]_0__reg_p:D                                                                                                                  | core_clock               | min        | 0.175f     | -0.004        | 0.000 | 0.180 | NA        |
+| R[2]_2__reg_p:D                                                                                                                  | core_clock               | min        | 0.175f     | -0.005        | 0.000 | 0.180 | NA        |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_ICGX0P5H7R_E:E | **clock_gating_default** | min        | 0.149f     | -0.002        | 0.000 | 0.151 | NA        |
+| R[2]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | min        | 0.184f     | -0.003        | 0.000 | 0.188 | NA        |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_ICGX0P5H7R_E:E | **clock_gating_default** | min        | 0.170r     | -0.032        | 0.000 | 0.202 | NA        |
+| R[1]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | min        | 0.201f     | -0.004        | 0.000 | 0.204 | NA        |
+| R[0]_7__reg_p_E_ICGX0P5H7R_E:E                                                                                                   | **clock_gating_default** | min        | 0.258f     | -0.003        | 0.000 | 0.261 | NA        |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------------+------------+------------+---------------+-------+-------+-----------+
+I20260728 12:52:44.154340  6561 Sta.cc:1886] 
++------------+------------+-------+
+| Clock      | Delay Type | TNS   |
++------------+------------+-------+
+| core_clock | max        | 0.000 |
+| core_clock | min        | 0.000 |
++------------+------------+-------+
+I20260728 12:52:44.172467  6561 NetlistWriter.cc:52] start write verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.v
+I20260728 12:52:44.180521  6561 NetlistWriter.cc:71] finish write verilog file /home/sun/Desktop/yosys-sta/result/top-500MHz/top.v
+I20260728 12:52:44.180688  6561 Sta.cc:3111] used lib: /home/sun/Desktop/yosys-sta/scripts/../pdk/icsprout55/IP/STD_cell/ics55_LLSC_H7C_V1p10C100/ics55_LLSC_H7CR/liberty/ics55_LLSC_H7CR_typ_tt_1p2_25_nldm.lib
+I20260728 12:52:44.180714  6561 Sta.cc:3096] The timing engine run success.
+I20260728 12:52:44.180922  6561 Power.cc:854] build graph and seq graph start
+I20260728 12:52:44.181037  6561 PwrBuildGraph.cc:80] build power graph start
+I20260728 12:52:44.184729  6561 PwrBuildGraph.cc:170] build power graph end
+I20260728 12:52:44.184908  6561 PwrBuildGraph.cc:172] build power graph memory usage 0MB
+I20260728 12:52:44.184937  6561 PwrBuildGraph.cc:174] build power graph time elapsed 0.003898s
+I20260728 12:52:44.184958  6561 PwrBuildSeqGraph.cc:326] build seq graph start
+I20260728 12:52:44.224511  6561 PwrBuildSeqGraph.cc:330] build seq graph end
+I20260728 12:52:44.224623  6561 PwrBuildSeqGraph.cc:332] seq inst num: 52
+I20260728 12:52:44.224867  6561 PwrBuildSeqGraph.cc:333] input port num: 2
+I20260728 12:52:44.224886  6561 PwrBuildSeqGraph.cc:334] output port num: 16
+I20260728 12:52:44.224897  6561 PwrBuildSeqGraph.cc:335] seq macro num: 0
+I20260728 12:52:44.224941  6561 PwrBuildSeqGraph.cc:336] seq arc num: 1590
+I20260728 12:52:44.224959  6561 PwrBuildSeqGraph.cc:339] seq vertex max fanout: 52
+I20260728 12:52:44.224967  6561 PwrBuildSeqGraph.cc:340] seq vertex max fanin: 44
+I20260728 12:52:44.225039  6561 PwrBuildSeqGraph.cc:343] build seq graph memory usage 723.22MB
+I20260728 12:52:44.225086  6561 PwrBuildSeqGraph.cc:345] build seq graph time elapsed 0.040128s
+I20260728 12:52:44.225106  6561 Power.cc:861] build graph and seq graph end
+I20260728 12:52:44.225137  6561 Power.cc:863] build graph and seq graph memory usage 723.22MB
+I20260728 12:52:44.225142  6561 Power.cc:866] build graph and seq graph time elapsed 0.044223s
+I20260728 12:52:44.225153  6561 Power.cc:871] power annotate vcd start
+I20260728 12:52:44.225157  6561 Power.cc:128] annotate toggle sp start
+I20260728 12:52:44.225162  6561 Power.cc:134] annotate toggle sp end
+I20260728 12:52:44.225163  6561 Power.cc:878] power vcd annotate end
+I20260728 12:52:44.225175  6561 Power.cc:880] power vcd annotate memory usage 0MB
+I20260728 12:52:44.225180  6561 Power.cc:882] power vcd annotate time elapsed 2.7e-05s
+I20260728 12:52:44.225318  6561 Power.cc:896] power propagation start
+I20260728 12:52:44.225437  6561 PwrCheckPipelineLoop.cc:122] check pipeline loop start
+I20260728 12:52:44.226171  6561 PwrCheckPipelineLoop.cc:129] check pipeline loop end
+I20260728 12:52:44.227042  6561 PwrCheckPipelineLoop.cc:137] check pipeline loop memory usage 0MB
+I20260728 12:52:44.227106  6561 PwrCheckPipelineLoop.cc:139] check pipeline loop time elapsed 0.001669s
+I20260728 12:52:44.227228  6561 PwrLevelizeSeqGraph.cc:93] seq levelization start
+I20260728 12:52:44.227589  6561 PwrLevelizeSeqGraph.cc:101] seq levelization end
+I20260728 12:52:44.227680  6561 PwrLevelizeSeqGraph.cc:103] the seq graph's level depth 47
+I20260728 12:52:44.227747  6561 PwrLevelizeSeqGraph.cc:116] levelization memory usage 0MB
+I20260728 12:52:44.227759  6561 PwrLevelizeSeqGraph.cc:118] levelization time elapsed 0.000531s
+I20260728 12:52:44.227793  6561 PwrPropagateConst.cc:184] propagate const start
+I20260728 12:52:44.227871  6561 PwrPropagateConst.cc:109] set tie cell fanout from seg0_TIEHIH7R_Z:Z data in vertex seg0_0_
+I20260728 12:52:44.227924  6561 PwrPropagateConst.cc:288] propagate const end
+I20260728 12:52:44.227969  6561 PwrPropagateConst.cc:290] propagate const memory usage 0MB
+I20260728 12:52:44.227978  6561 PwrPropagateConst.cc:292] propagate const time elapsed 0.000184s
+I20260728 12:52:44.227996  6561 PwrPropagateToggleSP.cc:202] propagate toggle sp start
+I20260728 12:52:44.269034  6561 PwrPropagateToggleSP.cc:316] propagate toggle sp end
+I20260728 12:52:44.269270  6561 PwrPropagateToggleSP.cc:319] propagate toggle sp memory usage 656.056MB
+I20260728 12:52:44.269343  6561 PwrPropagateToggleSP.cc:321] propagate toggle sp time elapsed 0.041346s
+I20260728 12:52:44.269378  6561 PwrPropagateClock.cc:68] propagate clock start
+I20260728 12:52:44.269419  6561 PwrPropagateClock.cc:80] propagate clock end
+I20260728 12:52:44.269429  6561 PwrPropagateClock.cc:82] propagate clock memory usage 0MB
+I20260728 12:52:44.269433  6561 PwrPropagateClock.cc:84] propagate clock time elapsed 5.4e-05s
+I20260728 12:52:44.269436  6561 Power.cc:914] power propagation end
+I20260728 12:52:44.269446  6561 Power.cc:916] power propagation memory usage 656.056MB
+I20260728 12:52:44.269450  6561 Power.cc:918] power propagation time elapsed 0.044134s
+I20260728 12:52:44.269557  6561 Power.cc:267] power calculation start
+I20260728 12:52:44.269577  6561 PwrCalcLeakagePower.cc:85] calc leakage power start
+I20260728 12:52:44.366735  6561 PwrCalcLeakagePower.cc:119] calc leakage power result 0.000117004mw
+I20260728 12:52:44.366860  6561 PwrCalcLeakagePower.cc:122] calc leakage power end
+I20260728 12:52:44.366955  6561 PwrCalcLeakagePower.cc:124] calc leakage power memory usage 0MB
+I20260728 12:52:44.366964  6561 PwrCalcLeakagePower.cc:126] calc leakage power time elapsed 0.097389s
+I20260728 12:52:44.366986  6561 PwrCalcInternalPower.cc:565] calc internal power start
+[0;31mE20260728 12:52:44.367798  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_OAI31X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.367892  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_OAI31X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.367970  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_OAI31X0P5H7R_Y:B0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.368117  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_OAI31X0P5H7R_Y:B0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.368289  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_NOR__B_Y_$_NAND__A_Y_$_NAND__B_Y_OAI31X0P5H7R_Y:B0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.369721  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.369834  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.369848  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.369876  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.369879  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.369882  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.370003  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.370050  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.371413  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_AOI2BB1X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.371500  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_AOI2BB1X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.373962  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374032  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374049  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374056  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374063  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374068  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374073  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374076  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.374266  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.374549  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.377081  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_NOR2X6H7R_B:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.377179  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_NOR2X6H7R_B:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.377978  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378095  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378118  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378125  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378131  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378136  6561 PwrCalcInternalPower.cc:97] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.378459  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.378659  6561 PwrCalcInternalPower.cc:205] R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.410375  6561 PwrCalcInternalPower.cc:97] R[0]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.410542  6561 PwrCalcInternalPower.cc:97] R[0]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.435765  6561 PwrCalcInternalPower.cc:97] R[1]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.435899  6561 PwrCalcInternalPower.cc:97] R[1]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.435979  6561 PwrCalcInternalPower.cc:205] R[1]_7__reg_p_E_NAND2X0P5H7R_Y:A input slew is not exist.
+[m[0;31mE20260728 12:52:44.447530  6561 PwrCalcInternalPower.cc:97] R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_C0_OR3X1H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.447660  6561 PwrCalcInternalPower.cc:97] R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_C0_OR3X1H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.447687  6561 PwrCalcInternalPower.cc:97] R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_C0_OR3X1H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.447695  6561 PwrCalcInternalPower.cc:97] R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_C0_OR3X1H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.454030  6561 PwrCalcInternalPower.cc:97] R[2]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.454164  6561 PwrCalcInternalPower.cc:97] R[2]_7__reg_p_E_NAND2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.456971  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.457078  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.457105  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.457113  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.457294  6561 PwrCalcInternalPower.cc:205] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.457543  6561 PwrCalcInternalPower.cc:205] out_0__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.459311  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1_C0_NOR3X3H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.459404  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1_C0_NOR3X3H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.459426  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1_C0_NOR3X3H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.459460  6561 PwrCalcInternalPower.cc:97] out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1_C0_NOR3X3H7R_Y:C rise slew is not exist.
+[m[0;31mE20260728 12:52:44.459512  6561 PwrCalcInternalPower.cc:205] out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1_C0_NOR3X3H7R_Y:C input slew is not exist.
+[m[0;31mE20260728 12:52:44.460232  6561 PwrCalcInternalPower.cc:97] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.460307  6561 PwrCalcInternalPower.cc:97] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.460330  6561 PwrCalcInternalPower.cc:97] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.460336  6561 PwrCalcInternalPower.cc:97] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.460701  6561 PwrCalcInternalPower.cc:205] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.460865  6561 PwrCalcInternalPower.cc:205] out_1__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.461642  6561 PwrCalcInternalPower.cc:97] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.461715  6561 PwrCalcInternalPower.cc:97] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.461737  6561 PwrCalcInternalPower.cc:97] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.461745  6561 PwrCalcInternalPower.cc:97] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.461973  6561 PwrCalcInternalPower.cc:205] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.462131  6561 PwrCalcInternalPower.cc:205] out_2__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.462924  6561 PwrCalcInternalPower.cc:97] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.462996  6561 PwrCalcInternalPower.cc:97] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.463017  6561 PwrCalcInternalPower.cc:97] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.463023  6561 PwrCalcInternalPower.cc:97] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.463195  6561 PwrCalcInternalPower.cc:205] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.463267  6561 PwrCalcInternalPower.cc:205] out_3__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.464339  6561 PwrCalcInternalPower.cc:97] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.464613  6561 PwrCalcInternalPower.cc:97] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.464641  6561 PwrCalcInternalPower.cc:97] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.464649  6561 PwrCalcInternalPower.cc:97] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.464839  6561 PwrCalcInternalPower.cc:205] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.464977  6561 PwrCalcInternalPower.cc:205] out_4__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.465806  6561 PwrCalcInternalPower.cc:97] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.466174  6561 PwrCalcInternalPower.cc:97] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.466207  6561 PwrCalcInternalPower.cc:97] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.466214  6561 PwrCalcInternalPower.cc:97] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.466387  6561 PwrCalcInternalPower.cc:205] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.466524  6561 PwrCalcInternalPower.cc:205] out_5__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.468210  6561 PwrCalcInternalPower.cc:97] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.468297  6561 PwrCalcInternalPower.cc:97] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.468315  6561 PwrCalcInternalPower.cc:97] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.468320  6561 PwrCalcInternalPower.cc:97] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.468443  6561 PwrCalcInternalPower.cc:205] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.468524  6561 PwrCalcInternalPower.cc:205] out_6__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.469841  6561 PwrCalcInternalPower.cc:97] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.469931  6561 PwrCalcInternalPower.cc:97] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.469945  6561 PwrCalcInternalPower.cc:97] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.469950  6561 PwrCalcInternalPower.cc:97] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.470108  6561 PwrCalcInternalPower.cc:205] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.470172  6561 PwrCalcInternalPower.cc:205] out_7__reg_p_D_OAOI211X0P5H7R_Y:C0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.482785  6561 PwrCalcInternalPower.cc:97] pc_0__reg_p_D_NOR2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.482918  6561 PwrCalcInternalPower.cc:97] pc_0__reg_p_D_NOR2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483736  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483860  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483889  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483897  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483903  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.483908  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484251  6561 PwrCalcInternalPower.cc:205] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y:A input slew is not exist.
+[m[0;31mE20260728 12:52:44.484549  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484624  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484647  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484653  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484660  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.484665  6561 PwrCalcInternalPower.cc:97] pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.488788  6561 PwrCalcInternalPower.cc:97] pc_1__reg_p_D_NOR2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.488912  6561 PwrCalcInternalPower.cc:97] pc_1__reg_p_D_NOR2X0P5H7R_Y:A rise slew is not exist.
+[m[0;31mE20260728 12:52:44.490720  6561 PwrCalcInternalPower.cc:97] pc_3__reg_p_D_AOI21X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.490823  6561 PwrCalcInternalPower.cc:97] pc_3__reg_p_D_AOI21X0P5H7R_Y:B0 rise slew is not exist.
+[m[0;31mE20260728 12:52:44.490890  6561 PwrCalcInternalPower.cc:205] pc_3__reg_p_D_AOI21X0P5H7R_Y:B0 input slew is not exist.
+[m[0;31mE20260728 12:52:44.491014  6561 PwrCalcInternalPower.cc:205] pc_3__reg_p_D_AOI21X0P5H7R_Y:B0 input slew is not exist.
+[mI20260728 12:52:44.566672  6561 PwrCalcInternalPower.cc:605] calc internal power result 1.9825mW
+I20260728 12:52:44.566787  6561 PwrCalcInternalPower.cc:607] calc internal power end
+I20260728 12:52:44.566896  6561 PwrCalcInternalPower.cc:609] calc internal power memory usage 0MB
+I20260728 12:52:44.566922  6561 PwrCalcInternalPower.cc:611] calc internal power time elapsed 0.199936s
+I20260728 12:52:44.566970  6561 PwrCalcSwitchPower.cc:89] calc switch power start
+I20260728 12:52:44.567147  6561 PwrCalcSwitchPower.cc:106] net seg1_0_ has no driver, skip switch power calculation.
+I20260728 12:52:44.568105  6561 PwrCalcSwitchPower.cc:173] calc switch power result 0mw
+I20260728 12:52:44.568186  6561 PwrCalcSwitchPower.cc:175] calc switch power end
+I20260728 12:52:44.568284  6561 PwrCalcSwitchPower.cc:177] calc switch power memory usage 0MB
+I20260728 12:52:44.568305  6561 PwrCalcSwitchPower.cc:179] calc switch power time elapsed 0.001334s
+I20260728 12:52:44.572355  6561 Power.cc:275] power calculation end
+I20260728 12:52:44.572592  6561 Power.cc:277] power calculation memory usage 0MB
+I20260728 12:52:44.572649  6561 Power.cc:279] power calculation time elapsed 0.303091s
+I20260728 12:52:44.572702  6561 Power.cc:981] power report start, output dir: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260728 12:52:44.572944  6561 Power.cc:491] 
++---------------+----------------+--------------+---------------+-------------+-----------+
+| Power Group   | Internal Power | Switch Power | Leakage Power | Total Power | (%)       |
++---------------+----------------+--------------+---------------+-------------+-----------+
+| combinational | 1.781e-03      | 0.000e+00    | 7.078e-08     | 1.781e-03   | (89.829%) |
+| sequential    | 2.016e-04      | 0.000e+00    | 4.622e-08     | 2.016e-04   | (10.171%) |
++---------------+----------------+--------------+---------------+-------------+-----------+
+I20260728 12:52:44.573175  6561 Power.cc:543] Total Power   ==  0.00198261 W
+I20260728 12:52:44.575068  6561 Power.cc:669] Instance Power Report: 
+I20260728 12:52:44.575133  6561 Power.cc:670] 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+----------------+--------------+---------------+-------------+
+| Instance Name                                                                                                                                                                                                                                                     | Nominal Voltage | Internal Power | Switch Power | Leakage Power | Total Power |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+----------------+--------------+---------------+-------------+
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A2_AOI222X4H7R_Y                                                                                                                                                                                                              | 1.2             | 1.306e-04      | 0.000e+00    | 3.858e-10     | 1.306e-04   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR4X2H7R_Y_A_NOR3X1P4H7R_A_Y_XNOR3X3H7R_A                                                                                                                 | 1.2             | 1.085e-04      | 0.000e+00    | 8.518e-10     | 1.085e-04   |
+| R[0]_5__XNOR2X4H7R_A_Y_AOI31X4H7R_A0                                                                                                                                                                                                                              | 1.2             | 5.621e-05      | 0.000e+00    | 3.132e-10     | 5.621e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_A_AOI211X2H7R_Y_B0_AOI221X4H7R_Y                                                                                                                                                                          | 1.2             | 5.370e-05      | 0.000e+00    | 3.213e-10     | 5.370e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A                                                                                                                                                                                  | 1.2             | 4.740e-05      | 0.000e+00    | 5.059e-10     | 4.740e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y                                                                                                                                                           | 1.2             | 4.704e-05      | 0.000e+00    | 1.007e-10     | 4.704e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y_B_XOR2X0P5H7R_Y_B_OA211X4H7R_A1                                                                                     | 1.2             | 4.694e-05      | 0.000e+00    | 3.267e-10     | 4.694e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y                                                                                                                                            | 1.2             | 4.623e-05      | 0.000e+00    | 3.256e-10     | 4.623e-05   |
+| pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y                                                                                                                                                                                                                 | 1.2             | 4.619e-05      | 0.000e+00    | 1.709e-10     | 4.619e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR4X2H7R_Y_A_NOR3X1P4H7R_A_Y_XNOR3X3H7R_A_Y_OAI211X6H7R_A1                                                                                                | 1.2             | 3.980e-05      | 0.000e+00    | 3.282e-10     | 3.980e-05   |
+| pc_3__reg_p_D_AOI21X0P5H7R_Y_A0_AOAI211X0P5H7R_Y                                                                                                                                                                                                                  | 1.2             | 3.439e-05      | 0.000e+00    | 8.417e-11     | 3.439e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_A_AOI211X2H7R_Y                                                                                                                                                                                           | 1.2             | 3.189e-05      | 0.000e+00    | 1.460e-10     | 3.189e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_Y_OAOI211X2H7R_A1                                                                                                                                                                                         | 1.2             | 2.894e-05      | 0.000e+00    | 1.598e-10     | 2.894e-05   |
+| out_5__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_XNOR2X1P4H7R_B                                                                                                                                                                                                | 1.2             | 2.682e-05      | 0.000e+00    | 3.903e-10     | 2.682e-05   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y                                                                                                                                                                                                                   | 1.2             | 2.569e-05      | 0.000e+00    | 1.754e-10     | 2.569e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_OAI211X1P4H7R_Y_B0_OAI211X1H7R_Y                                                                                                                                          | 1.2             | 2.544e-05      | 0.000e+00    | 8.926e-11     | 2.544e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y                                                                                                                                                               | 1.2             | 2.411e-05      | 0.000e+00    | 1.300e-10     | 2.411e-05   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_A1_XNOR2X0P5H7R_Y                                                                                                                                                                                                 | 1.2             | 2.401e-05      | 0.000e+00    | 3.516e-10     | 2.401e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y_B_NAND2X0P5H7R_B_Y_OAI21X1P4H7R_A1                                                                                  | 1.2             | 2.400e-05      | 0.000e+00    | 1.241e-10     | 2.400e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_Y_OA211X3H7R_A1                                                                                                                                                                                           | 1.2             | 2.292e-05      | 0.000e+00    | 2.711e-10     | 2.292e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_B0_AOI221X0P5H7R_Y                                                                                                                                            | 1.2             | 2.068e-05      | 0.000e+00    | 1.096e-10     | 2.068e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_AOI2BB1X0P5H7R_Y_A0N_AOI211X0P5H7R_Y                                                                                       | 1.2             | 1.980e-05      | 0.000e+00    | 8.461e-11     | 1.980e-05   |
+| R[2]_0__NOR4BX1P4H7R_B_Z_AOI221X4H7R_C0_Y_NAND3X6H7R_C                                                                                                                                                                                                            | 1.2             | 1.847e-05      | 0.000e+00    | 2.648e-10     | 1.848e-05   |
+| pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y_C_OAI21X0P5H7R_Y_B0_NAND2X0P5H7R_Y_B_NOR2X0P5H7R_B_Y_MUX2X8H7R_B                                                                                                                                                | 1.2             | 1.839e-05      | 0.000e+00    | 1.293e-09     | 1.839e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_A0_AOAI211X1P4H7R_A1_B0_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y                                                                                                                                                       | 1.2             | 1.756e-05      | 0.000e+00    | 3.516e-10     | 1.756e-05   |
+| R[2]_0__NOR4BX1P4H7R_B_Z_AOI221X4H7R_C0                                                                                                                                                                                                                           | 1.2             | 1.752e-05      | 0.000e+00    | 3.798e-10     | 1.752e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0                                                                                                                                                                                                                               | 1.2             | 1.601e-05      | 0.000e+00    | 3.780e-10     | 1.601e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR2BX1P4H7R_B_Z_XNOR2X1P4H7R_A                                                                                                                            | 1.2             | 1.575e-05      | 0.000e+00    | 3.883e-10     | 1.575e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y                                                                                                                     | 1.2             | 1.547e-05      | 0.000e+00    | 1.312e-09     | 1.547e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_B0_OAI211X1P4H7R_Y                                                                                                                                                                                           | 1.2             | 1.412e-05      | 0.000e+00    | 1.025e-10     | 1.412e-05   |
+| pc_3__reg_p_D_AOI21X0P5H7R_Y                                                                                                                                                                                                                                      | 1.2             | 1.398e-05      | 0.000e+00    | 8.764e-11     | 1.398e-05   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_A1_XNOR2X0P5H7R_Y_A_OAI2BB1X0P5H7R_Y                                                                                                                                                                              | 1.2             | 1.255e-05      | 0.000e+00    | 1.420e-10     | 1.255e-05   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_C0_AOI21X0P5H7R_Y_B0_OA22X0P5H7R_Y                                                                                                                            | 1.2             | 1.246e-05      | 0.000e+00    | 1.805e-10     | 1.247e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y                                                                                                                                                                                                              | 1.2             | 1.218e-05      | 0.000e+00    | 1.280e-10     | 1.218e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_A_AOI211X2H7R_Y_A1_OAI221X0P5H7R_Y                                                                                                                                                                        | 1.2             | 1.196e-05      | 0.000e+00    | 9.176e-11     | 1.196e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_A_AOI211X2H7R_Y_A0_OAI221X0P5H7R_Y                                                                                                                                                                        | 1.2             | 1.196e-05      | 0.000e+00    | 9.176e-11     | 1.196e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_OAI21X0P7H7R_B0                                                                                                                                                                                                         | 1.2             | 1.184e-05      | 0.000e+00    | 9.651e-11     | 1.184e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y_B_NAND2X0P5H7R_B_Y_OAI21X1P4H7R_A1_B0_NAND3X1H7R_Y                                                                  | 1.2             | 1.140e-05      | 0.000e+00    | 5.780e-11     | 1.140e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_A0_AOAI211X1P4H7R_A1                                                                                                                                                                                         | 1.2             | 1.081e-05      | 0.000e+00    | 1.170e-10     | 1.081e-05   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_A_AOI211X2H7R_Y_C0_AOI211X2H7R_Y                                                                                                                                                                          | 1.2             | 1.068e-05      | 0.000e+00    | 1.271e-10     | 1.068e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_AOI2BB1X0P5H7R_Y                                                                                                           | 1.2             | 1.058e-05      | 0.000e+00    | 1.788e-10     | 1.058e-05   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_Y_BUFX16H7R_A                                                                                                                                                                                                                 | 1.2             | 1.031e-05      | 0.000e+00    | 1.309e-09     | 1.032e-05   |
+| out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A                                                                                                                                                                                                                 | 1.2             | 1.027e-05      | 0.000e+00    | 3.505e-10     | 1.027e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y_A1_MUX2X8H7R_Y_B_XOR2X0P5H7R_Y_B_OA211X4H7R_A1_C0_NAND3X0P5H7R_Y                                                                   | 1.2             | 1.011e-05      | 0.000e+00    | 4.580e-11     | 1.011e-05   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_OR__Y_B_$_DFF_P__Q_D_$_MUX__Y_B_$_NAND__A_Y_AOI211X1P4H7R_Y                                                                                                                                    | 1.2             | 9.745e-06      | 0.000e+00    | 1.119e-10     | 9.745e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR4X2H7R_Y                                                                                                                                                | 1.2             | 9.639e-06      | 0.000e+00    | 1.003e-10     | 9.639e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A                                                                                                                                                                                                 | 1.2             | 8.564e-06      | 0.000e+00    | 3.498e-10     | 8.564e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_OA22X0P5H7R_Y                                                                                                                                                                                                 | 1.2             | 7.948e-06      | 0.000e+00    | 1.756e-10     | 7.948e-06   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_D_$_MUX__S_Y_OA211X4H7R_Y_B0_AOI31X0P7H7R_Y                                                                                                                          | 1.2             | 7.710e-06      | 0.000e+00    | 1.156e-10     | 7.710e-06   |
+| R[2]_6__reg_p_D_NOR3X1P4H7R_Y                                                                                                                                                                                                                                     | 1.2             | 7.624e-06      | 0.000e+00    | 9.284e-11     | 7.624e-06   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_B0_OAI211X1P4H7R_Y_C0_AOI32X0P5H7R_Y                                                                                                                                                                         | 1.2             | 7.609e-06      | 0.000e+00    | 9.524e-11     | 7.609e-06   |
+| R[0]_6__reg_p_D_NOR4X2H7R_Y                                                                                                                                                                                                                                       | 1.2             | 7.527e-06      | 0.000e+00    | 8.509e-11     | 7.527e-06   |
+| R[1]_6__reg_p_D_NOR4X2H7R_Y                                                                                                                                                                                                                                       | 1.2             | 7.336e-06      | 0.000e+00    | 8.509e-11     | 7.336e-06   |
+| out_0__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_OAI211X1P4H7R_A1                                                                                                                                                                                              | 1.2             | 7.252e-06      | 0.000e+00    | 9.355e-11     | 7.252e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR4X2H7R_Y_A_NOR3X1P4H7R_A                                                                                                                                | 1.2             | 7.062e-06      | 0.000e+00    | 1.092e-10     | 7.062e-06   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_A0_AOAI211X1P4H7R_A1_B0_NOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y                                                                                                                                      | 1.2             | 6.943e-06      | 0.000e+00    | 3.505e-10     | 6.944e-06   |
+| R[1]_0__NAND2X0P5H7R_B_Y_AOI32X1H7R_A0                                                                                                                                                                                                                            | 1.2             | 6.902e-06      | 0.000e+00    | 1.246e-10     | 6.902e-06   |
+| R[0]_3__reg_p_D_NAND2BX1P4H7R_Y                                                                                                                                                                                                                                   | 1.2             | 6.824e-06      | 0.000e+00    | 1.687e-10     | 6.825e-06   |
+| R[3]_6__$_MUX__B_Y_$_MUX__A_Y_$_XOR__B_Y_$_OR__B_Y_$_AND__A_Y_$_AND__B_Y_NOR3X1P4H7R_Y                                                                                                                                                                            | 1.2             | 6.743e-06      | 0.000e+00    | 9.019e-11     | 6.743e-06   |
+| R[0]_0__$_XNOR__A_Y_$_AND__B_Y_$_AND__B_Y_$_NAND__B_Y_$_AND__A_B_$_ANDNOT__B_A_$_SDFF_PN0__Q_R_$_SDFF_PN0__R_D_$_ANDNOT__A_Y_$_OR__B_Y_AOI2BB1X0P5H7R_Y_A1N_AOI211X0P5H7R_Y                                                                                       | 1.2             | 6.496e-06      | 0.000e+00    | 8.956e-11     | 6.496e-06   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_A1_XNOR2X0P5H7R_Y_B_XNOR2X0P5H7R_Y                                                                                                                                                                                | 1.2             | 6.338e-06      | 0.000e+00    | 3.504e-10     | 6.338e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A0_NOR2BX1P4H7R_B_Z_XNOR2X1P4H7R_A_B_XOR2X0P5H7R_Y                                                                                                            | 1.2             | 6.056e-06      | 0.000e+00    | 3.495e-10     | 6.057e-06   |
+| pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_S_$_NAND__B_Y_$_AND__B_Y_NOR3X0P5H7R_Y                                                                                                                                                                                       | 1.2             | 5.969e-06      | 0.000e+00    | 5.860e-11     | 5.969e-06   |
+| pc_2__reg_p_D_NOR2BX1P4H7R_AN_B_OAI31X0P5H7R_Y                                                                                                                                                                                                                    | 1.2             | 5.850e-06      | 0.000e+00    | 9.438e-11     | 5.850e-06   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A1_AOI211X2H7R_Y_B0_OAI211X1P4H7R_Y_B0_AOI32X0P5H7R_Y                                                                                                                                                                         | 1.2             | 5.647e-06      | 0.000e+00    | 9.332e-11     | 5.647e-06   |
+| R[0]_1__reg_p_D_NAND2BX0P5H7R_Y                                                                                                                                                                                                                                   | 1.2             | 5.535e-06      | 0.000e+00    | 1.407e-10     | 5.535e-06   |
+| pc_3__reg_p_D_AOI21X0P5H7R_Y_A1_NAND3X0P5H7R_Y                                                                                                                                                                                                                    | 1.2             | 5.503e-06      | 0.000e+00    | 5.115e-11     | 5.503e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_A1_NAND2X0P5H7R_Y_A_OAI21X0P5H7R_B0                                                                                                                           | 1.2             | 5.476e-06      | 0.000e+00    | 8.711e-11     | 5.476e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_Y_XNOR2X3H7R_A_B_OAOI211X1P4H7R_Y_C0_AOI21X0P5H7R_Y                                                                                                                                             | 1.2             | 5.407e-06      | 0.000e+00    | 9.647e-11     | 5.407e-06   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C                                                                                                                                                                                                           | 1.2             | 5.352e-06      | 0.000e+00    | 8.395e-11     | 5.352e-06   |
+| R[0]_5__XNOR2X4H7R_A                                                                                                                                                                                                                                              | 1.2             | 5.287e-06      | 0.000e+00    | 5.958e-10     | 5.288e-06   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_A1_XNOR2X0P5H7R_Y_A_OAI2BB1X0P5H7R_Y_B0_OAI21X0P5H7R_Y                                                                                                                                                            | 1.2             | 5.240e-06      | 0.000e+00    | 8.746e-11     | 5.240e-06   |
+| R[2]_2__MUX2X3H7R_A_Y_OAI21X4H7R_A1                                                                                                                                                                                                                               | 1.2             | 5.160e-06      | 0.000e+00    | 2.852e-10     | 5.161e-06   |
+| out_5__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A                                                                                                                                                                                                                 | 1.2             | 5.112e-06      | 0.000e+00    | 3.558e-10     | 5.113e-06   |
+| R[0]_7__reg_p_D_NOR3X1P4H7R_Y                                                                                                                                                                                                                                     | 1.2             | 4.854e-06      | 0.000e+00    | 8.235e-11     | 4.854e-06   |
+| R[1]_7__reg_p_D_NOR3X1P4H7R_Y                                                                                                                                                                                                                                     | 1.2             | 4.809e-06      | 0.000e+00    | 8.279e-11     | 4.809e-06   |
+| out_5__reg_p_D_OAOI211X0P5H7R_Y_A0_XNOR2X0P5H7R_A_Y_XNOR2X1P4H7R_B_A_NOR2X1P4H7R_Y                                                                                                                                                                                | 1.2             | 4.776e-06      | 0.000e+00    | 1.036e-10     | 4.777e-06   |
+| R[2]_2__reg_p_D_NOR2X0P5H7R_Y_B_OAO211X0P5H7R_Y_C0_OR3X1H7R_C                                                                                                                                                                                                     | 1.2             | 4.700e-06      | 0.000e+00    | 1.779e-10     | 4.700e-06   |
+| R[0]_5__XNOR2X4H7R_A_Y_AO31X4H7R_A0_A2_AOI222X4H7R_Y_A1_AO21X1P4H7R_Y                                                                                                                                                                                             | 1.2             | 4.599e-06      | 0.000e+00    | 1.995e-10     | 4.599e-06   |
+| pc_1__$_XOR__B_Y_$_MUX__A_Y_$_MUX__A_Y_OR3X1H7R_Y_C_OAI21X0P5H7R_Y                                                                                                                                                                                                | 1.2             | 4.538e-06      | 0.000e+00    | 8.656e-11     | 4.538e-06   |
+| R[2]_1__MUX2X3H7R_A_Y_OAI21X3H7R_A1                                                                                                                                                                                                                               | 1.2             | 4.484e-06      | 0.000e+00    | 2.276e-10     | 4.484e-06   |
+| out_7__reg_p_D_OAOI211X0P5H7R_Y_B0_NAND2X0P5H7R_Y_A_XOR2X0P5H7R_A_B_AOAI211X0P5H7R_Y                                                                                                                                                                              | 1.2             | 4.177e-06      | 0.000e+00    | 8.678e-11     | 4.177e-06   |
+| out_0__reg_p_D_OAOI211X0P5H7R_Y                                                                                                                                                                                                                                   | 1.2             | 4.142e-06      | 0.000e+00    | 8.957e-11     | 4.142e-06   |
+| R[1]_5__MUX2X0P5H7R_B_Y_OAI21X0P5H7R_A1_Y_NOR3X1P4H7R_C_Y_OA211X3H7R_A1_C0_XOR2X0P5H7R_Y                                                                                                                                                                          | 1.2             | 3.984e-06      | 0.000e+00    | 3.549e-10     | 3.984e-06   |
+| R[0]_5__reg_p_D_NOR3X1P4H7R_Y                                                                                                                                                                      
+I20260728 12:52:44.585621  6561 Power.cc:1047] power report end, output dir: /home/sun/Desktop/yosys-sta/result/top-500MHz
+I20260728 12:52:44.585752  6561 Power.cc:1049] power report memory usage 0MB
+I20260728 12:52:44.585775  6561 Power.cc:1051] power report time elapsed 0.013075s
