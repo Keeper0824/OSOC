@@ -1,0 +1,104 @@
+p573大表有各个opcode,详细的在正文，如第二章。
+
+gcc -E -P ... -o ... .i
+
+立即数背后的故事 
+现象：0x34120000 
+解决：
+Motorola 68k OS读取X86/...
+uint32_t read_le32(const uint8_t *p) {
+  return ((uint32_t)p[0]      ) |
+         ((uint32_t)p[1] <<  8) |
+         ((uint32_t)p[2] << 16) |
+         ((uint32_t)p[3] << 24);
+}
+
+Motorola 68k加入 NEMU中
+uint32_t read_be32(const uint8_t *p) {
+  return ((uint32_t)p[0] << 24) |
+         ((uint32_t)p[1] << 16) |
+         ((uint32_t)p[2] <<  8) |
+         ((uint32_t)p[3]      );
+}
+立即数背后的故事(2) lui+addi
+
+
+ RTFSC理解指令执行的过程
+ 开始运行，首先给一个AM的运行时环境，进入cpuexe,然后exec_once给一个PC从内存（虚拟->物理）中fetch指令，然后isa_exec_once解码，解码同时立即执行，随后更新PC
+ 
+ NEMU 初始化 monitor、内存、ISA 和设备，加载客户程序镜像，并将 cpu.pc 设置为复位向量。随后 engine_start() 调用 cpu_exec() 进入指令执行循环。每轮中，exec_once() 使用当前 cpu.pc 初始化译码结构中的 pc 和 snpc，再调用 isa_exec_once()。isa_exec_once() 通过 inst_fetch() 从客户虚拟地址取出指令；根据 MMU 状态，该地址可能直接作为物理地址使用，也可能先经过地址翻译，再通过物理地址访问内存(   ├─ MMU_DIRECT：直接作为物理地址访问
+   └─ MMU_TRANSLATE：经过地址翻译得到物理地址)。取指时 snpc 被更新为顺序下一条指令的地址。之后 decode_exec() 使用 INSTPAT 匹配并解析指令，同时执行对应的指令语义。默认令 dnpc = snpc，若遇到分支、跳转或异常，则修改 dnpc。最后 exec_once() 执行 cpu.pc = s->dnpc，再进行 trace、差分测试、设备更新和状态检查，开始执行下一条指令。
+ 
+ 
+ 为什么执行了未实现指令会出现上述报错信息
+ 当 NEMU 执行一条未实现的指令时，isa_exec_once() 取指后进入 decode_exec()。由于该指令不能匹配任何已实现的 INSTPAT，最终会匹配兜底的 inv 模式，并通过 INV(s->pc) 调用 invalid_inst()。该函数打印出错 PC、非法指令的机器码以及可能的错误原因，然后调用 set_nemu_state() 将 NEMU 设置为 NEMU_ABORT。当控制流返回 cpu_exec() 后，执行循环检测到 NEMU 已不再处于 NEMU_RUNNING 状态，于是停止运行并输出报错和统计信息。
+ 
+ 
+ 
+ 指令名对照
+ 根据指令的机器码查手册，而不是拿反汇编显示的助记符硬搜
+ 
+ 批处理
+ NEMUFLAGS += -b
+ 
+ stdarg是如何实现的?
+stdarg.h中包含一些获取函数调用参数的宏, 它们可以看做是调用约定中关于参数传递方式的抽象. 不同ISA的ABI规范会定义不同的函数参数传递方式, 如果让你来实现这些宏, 你会如何实现?
+ va_list        保存“当前读到第几个可变参数” 内存站
+va_start(ap,x) 从最后一个固定参数 x 的后面开始
+va_arg(ap,T)   取当前参数，按 T 解释，并移动到下一个参数
+va_end(ap)     清理（某些架构需要）
+
+如何生成native的可执行文件?
+ 通用 Makefile 对 native 走的是特殊链接分支：
+$(CXX) -o $@ -Wl,--whole-archive $(LINKAGE) \
+            -Wl,-no-whole-archive $(LDFLAGS_CXX)
+而不是裸机架构所用的：
+$(LD) -T linker.ld ...
+因此 native 程序由 Linux 的启动代码进入 main()，不需要 NEMU、start.S、0x80000000 和 ebreak
+
+
+奇怪的错误码
+为什么错误码是1呢? 你知道make程序是如何得到这个错误码的吗
+如果测试失败，AM 的 check() 大致会执行：
+halt(1);
+native 平台的 halt(1) 最终会调用 Linux 的：
+exit(1);
+Make 启动这个程序后，会拿到子进程的退出状态。只要非零，Make 就判为命令失败：
+Error 1
+
+ 消失的符号
+我们在am-kernels/tests/cpu-tests/tests/add.c中定义了宏NR_DATA, 同时也在add()函数中定义了局部变量c和形参a, b, 但你会发现在符号表中找不到和它们对应的表项, 为什么会这样? 思考一下, 什么才算是一个符号(symbol)?
+
+NR_DATA 是宏，在预处理阶段就被替换成具体数值，编译后不存在名为 NR_DATA 的实体，因此不会进入符号表。
+a、b、c 是函数参数和自动局部变量。它们通常被放在寄存器或栈槽中，不需要独立的链接地址，因此一般不会作为普通 ELF 符号保存
+
+一般函数，全局变量是符号
+
+ 理解volatile关键字
+你或许会感到疑惑, 代码优化不是一件好事情吗? 为什么会有volatile这种奇葩的存在? 思考一下, 如果代码中p指向的地址最终被映射到一个设备寄存器, 去掉volatile可能会带来什么问题?
+读取 *p 可能读取的是硬件实时状态
+如果没有 volatile，编译器可能把它们当作普通内存访问并进行优化：
+
+ 理解mainargs
+请你通过RTFSC理解这个参数是如何从make命令中传递到hello程序中的, $ISA-nemu和native采用了不同的传递方法, 都值得你去了解一下.
+int ret = main(mainargs);
+_trm_init:
+  auipc a0, ...
+  addi  a0, a0, ...   # 0x800000e4 <mainargs>
+  jal   main
+
+ 游戏是如何运行的
+1. 宿主机 SDL 收到键盘事件
+2. NEMU 键盘设备记录键码
+3. 游戏执行输入读取指令
+4. ISA 执行该指令
+5. NEMU 将 KBD_ADDR 映射到键盘设备
+6. AM 得到 keydown 和 keycode
+7. 游戏比较 keycode 与目标字母
+8. 比较相等，更新游戏状态
+9. 游戏调用 GPU 绘图接口
+10. AM 写 framebuffer 和同步寄存器
+11. NEMU VGA 设备刷新 SDL 窗口
+12. 玩家看到“命中”效果
+
+ 

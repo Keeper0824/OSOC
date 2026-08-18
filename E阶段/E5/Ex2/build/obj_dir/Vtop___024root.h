@@ -16,7 +16,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop___024root final {
     // DESIGN SPECIFIC STATE
     VL_IN8(x,7,0);
     VL_IN8(en,0,0);
-    VL_OUT8(y,3,0);
+    VL_OUT8(y,2,0);
     VL_OUT8(led4,0,0);
     VL_OUT8(seg0,7,0);
     CData/*0:0*/ __VstlFirstIteration;

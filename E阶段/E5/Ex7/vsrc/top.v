@@ -72,7 +72,6 @@ module top (
                 8'h3e: scan_to_ascii = 8'h38; // 8
                 8'h46: scan_to_ascii = 8'h39; // 9
 
-
                 8'h1c: scan_to_ascii = 8'h61; // a
                 8'h32: scan_to_ascii = 8'h62; // b
                 8'h21: scan_to_ascii = 8'h63; // c

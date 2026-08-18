@@ -3,14 +3,12 @@
 
 #include "verilated.h"
 
-extern const VlWide<16>/*511:0*/ Vtop__ConstPool__CONST_ha3962383_0 = VlWide<16>{{
+extern const VlWide<8>/*255:0*/ Vtop__ConstPool__CONST_h557f92b2_0 = VlWide<8>{{
         0x00000003, 0x0000009f, 0x00000025, 0x0000000d,
-        0x00000099, 0x00000049, 0x00000041, 0x0000001f,
-        0x000000ff, 0x000000ff, 0x000000ff, 0x000000ff,
-        0x000000ff, 0x000000ff, 0x000000ff, 0x000000ff
+        0x00000099, 0x00000049, 0x00000041, 0x0000001f
 }};
 
-extern const VlUnpacked<CData/*3:0*/, 512> Vtop__ConstPool__TABLE_h2b4b752b_0 = {{
+extern const VlUnpacked<CData/*2:0*/, 512> Vtop__ConstPool__TABLE_h4d437d01_0 = {{
     0U, 0U, 0U, 0U, 0U, 1U, 0U, 1U,
     0U, 2U, 0U, 2U, 0U, 2U, 0U, 2U,
     0U, 3U, 0U, 3U, 0U, 3U, 0U, 3U,

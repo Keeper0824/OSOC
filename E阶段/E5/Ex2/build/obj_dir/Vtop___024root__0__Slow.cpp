@@ -82,10 +82,10 @@ VL_ATTR_COLD bool Vtop___024root___trigger_anySet__stl(const VlUnpacked<QData/*6
     return (0U);
 }
 
-extern const VlUnpacked<CData/*3:0*/, 512> Vtop__ConstPool__TABLE_h2b4b752b_0;
+extern const VlUnpacked<CData/*2:0*/, 512> Vtop__ConstPool__TABLE_h4d437d01_0;
 extern const VlUnpacked<CData/*1:0*/, 512> Vtop__ConstPool__TABLE_hd5d8a076_0;
 extern const VlUnpacked<IData/*31:0*/, 512> Vtop__ConstPool__TABLE_h79bd449d_0;
-extern const VlWide<16>/*511:0*/ Vtop__ConstPool__CONST_ha3962383_0;
+extern const VlWide<8>/*255:0*/ Vtop__ConstPool__CONST_h557f92b2_0;
 
 VL_ATTR_COLD bool Vtop___024root___eval_phase__stl(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_phase__stl\n"); );
@@ -111,24 +111,24 @@ VL_ATTR_COLD bool Vtop___024root___eval_phase__stl(Vtop___024root* vlSelf) {
             // Inlined CFunc: _eval_stl
             if ((1ULL & vlSelfRef.__VstlTriggered[0U])) {
                 {
-                    // Inlined CFunc: _stl_sequent__TOP__0
-                    SData/*8:0*/ __Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1;
-                    __Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1 = 0;
-                    vlSelfRef.led4 = (0U != (IData)(vlSelfRef.x));
-                    __Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1 
+                    // Inlined CFunc: _ico_comb__TOP__0
+                    SData/*8:0*/ __Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1;
+                    __Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1 = 0;
+                    vlSelfRef.led4 = ((IData)(vlSelfRef.en) 
+                                      & (0U != (IData)(vlSelfRef.x)));
+                    __Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1 
                         = (((IData)(vlSelfRef.x) << 1U) 
                            | (IData)(vlSelfRef.en));
-                    vlSelfRef.y = Vtop__ConstPool__TABLE_h2b4b752b_0
-                        [__Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1];
+                    vlSelfRef.y = Vtop__ConstPool__TABLE_h4d437d01_0
+                        [__Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1];
                     if ((2U & Vtop__ConstPool__TABLE_hd5d8a076_0
-                         [__Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1])) {
+                         [__Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1])) {
                         vlSelfRef.top__DOT__i = Vtop__ConstPool__TABLE_h79bd449d_0
-                            [__Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtableidx1];
+                            [__Vinline_0__eval_stl___Vinline_0__ico_comb__TOP__0___Vtableidx1];
                     }
-                    vlSelfRef.seg0 = (((IData)(vlSelfRef.en) 
-                                       & (IData)(vlSelfRef.led4))
+                    vlSelfRef.seg0 = ((IData)(vlSelfRef.led4)
                                        ? (0x000000ffU 
-                                          & Vtop__ConstPool__CONST_ha3962383_0
+                                          & Vtop__ConstPool__CONST_h557f92b2_0
                                           [(0x07ffffffU 
                                             & (IData)(vlSelfRef.y))])
                                        : 0x000000ffU);
